@@ -1,0 +1,778 @@
+@font-face {
+    font-family: "italic";
+    src: url("assets/fonts/Inter-Italic.woff2");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("assets/fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+    font-family: "semibold";
+    src: url("assets/fonts/Inter-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "semiitalic";
+    src: url("assets/fonts/Inter-SemiBoldItalic.woff2");
+}
+
+
+body {
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    background-color: #f1f3f6;
+    height: 100%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    min-width: 978px;
+    background-color: #2874f0;
+    width: 100%;
+    color: white;
+    display: flex;
+    height: 56px;
+    z-index: 1030;
+}
+
+.subnav {
+    max-width: 1248px;
+    width: 100%;
+    margin: auto;
+    font-family: "semibold";
+    display: flex;
+    padding-top: 11px;
+    margin-top: 0;
+}
+
+.navbutton {
+    border: none;
+    background-color: white;
+    color: #2874f0;
+    margin-bottom: 4px;
+    font-weight: 500;
+    /* margin: 0 20px; */
+    padding: 6px 40px 6px 42px;
+    margin-top: 2px;
+    font-size: 16px;
+    letter-spacing: -.1px;
+    margin-right: 27px;
+
+
+}
+
+.more img {
+    width: 8px;
+    filter: invert();
+
+}
+
+.fliplogo {
+    display: flex;
+    min-width: 137px;
+    justify-content: flex-end;
+
+
+
+}
+
+.fliplogo .toplogo {
+    width: 75px;
+
+}
+
+.fliplogo .toplogo img {
+    width: 75px;
+}
+
+.fliplogo .bottomlogo {
+    font-size: 10.5px;
+    font-family: "italic";
+    margin-top: -4px;
+    flex-wrap: nowrap;
+
+}
+
+.fliplogo .bottomlogo img {
+    width: 10px;
+    margin-left: 2px;
+
+}
+
+.fliplogo .bottomlogo span {
+    color: #ffe500;
+    font-weight: 800;
+
+}
+
+.search {
+    display: flex;
+
+    margin: -1px auto -2px 12px;
+    min-width: 304px;
+    width: calc(100% -540px);
+    background-color: rgb(253, 253, 250);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 0px 14px;
+    flex: auto;
+    height: 36px;
+    max-width: 564px;
+    justify-content: space-between;
+
+}
+
+
+.search input {
+    color: rgb(122, 119, 116);
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    font-family: "regular";
+    letter-spacing: 0.15px;
+    margin-right: 0;
+    height: 36px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search img {
+    margin-top: 2px;
+    width: 19px;
+
+}
+
+.seller,
+.more,
+.cart {
+    margin: 0 20px;
+    padding-top: 8px;
+}
+
+
+.dropmenu {
+    margin-top: 56px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+    min-height: 40px;
+    background-color: white;
+}
+
+.dropmenu .subnav {
+    padding-top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.dropmenu span {
+    list-style-type: none;
+    display: flex;
+
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-left: 0;
+    /* font-weight: 700; */
+    font-family: "semibold";
+    font-size: 13px;
+    letter-spacing: .16px;
+    line-height: 1.4;
+    height: 100%;
+}
+
+.dropmenu span img {
+    width: 8px;
+    filter: invert(0.7);
+    margin-left: 6px;
+    /* height:8px; */
+}
+
+.dropmenu .subnav span:nth-last-child(1) img,
+.dropmenu .subnav span:nth-last-child(2) img {
+    display: none;
+}
+
+.dropmenu .subnav span:nth-last-child(1) {
+    margin-left: 1px;
+}
+
+.bodysec {
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
+
+    width: 100%;
+    position: relative;
+    background-color: rgb(239, 241, 241);
+}
+
+.subbody {
+    display: flex;
+    flex-flow: row;
+    padding: 8px;
+
+}
+
+
+.rightsec {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.topright {
+    padding: 16px 15px 0;
+    border: 1px solid #f0f0f0;
+}
+
+.homedata {
+    display: flex;
+
+}
+
+.homedata span {
+    font-size: 11.5px;
+    font-family: "regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    color: #878787;
+
+}
+
+.homedata span img {
+    width: 13px;
+    height: 9px;
+    margin-left: 3px;
+    margin-right: 3.5px;
+    margin-top: 2px;
+    filter: invert(0.6);
+
+}
+
+.homedata span:nth-last-child(1) {
+    padding-left: 1px;
+}
+
+.homedata span:nth-last-child(1) img {
+    display: none;
+
+}
+
+.homedata span #p {
+    max-width: 80px;
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline;
+    vertical-align: middle;
+}
+
+.homedata span #p:hover {
+    max-width: max-content;
+
+}
+
+.contentdata {
+
+    font-size: 15.2px;
+    font-weight: 400;
+    font-family: "semibold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin-top: 8.5px;
+    line-height: 1.52;
+    /* letter-spacing: -0.15px; */
+
+}
+
+.links {
+    margin-top: 1px;
+    display: flex;
+}
+
+.links span {
+    font-size: 13.0px;
+    font-family: "regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .15px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 7px 0px 5px 0 !important;
+    cursor: pointer;
+    margin-right: 20px !important;
+
+
+}
+
+.links :first-child {
+
+    font-family: "semibold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .15px;
+    font-weight: 400;
+
+
+}
+
+.links :nth-child(2) {
+    color: #2874f0;
+    font-family: "semibold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 2px solid #2874f0;
+}
+
+.links span:hover {
+    color: #2874f0;
+    /* font-family: "semibold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    border-bottom: 2px solid #2874f0;
+
+
+}
+
+
+
+
+
+
+/* ======================== left nav ================================================= */
+
+
+
+
+.leftsec {
+    flex: 0 0 280px;
+    /* padding : 0 10px 0 0 !important; */
+    display: flex;
+    flex-flow: column;
+    max-width: 280px;
+    width: 16.66%;
+
+
+}
+
+
+.leftsec .subleft {
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+
+}
+
+
+.subleft .left-filter {
+    padding: 16px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 17px;
+    font-family: "semibold";
+
+    letter-spacing: .3px;
+
+
+}
+
+.subleft .left-category {
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+
+.subleft .left-category .pdata {
+    font-size: 11.5px;
+    font-weight: 500;
+    font-family: "semibold";
+    letter-spacing: -0.06px;
+}
+
+.subleft .left-category .spandata {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #878787;
+    padding-left: 2px;
+    font-family: "regular";
+    letter-spacing: .15px;
+}
+
+.subleft .left-category .spandata img {
+    filter: invert(0.5);
+    height: 10px;
+    margin-right: 7px;
+
+}
+
+.subleft .left-category .mobdata {
+    font-size: 13px;
+    margin-left: 13px;
+    padding-left: 2px;
+    font-family: "semibold";
+    letter-spacing: .15px;
+    margin-top: 12px;
+}
+
+.subleft .left-price {
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    padding-top: 16.5px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "semibold";
+    border-bottom: 1px solid #ece6e6;
+    letter-spacing: -.05px;
+
+
+}
+.left-brand{
+border-bottom: 1px solid rgb(87, 81, 81);
+}
+
+ .bhead {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    padding-bottom: 8px;
+    font-size: 12.5px;
+    font-weight: 500;
+    font-family: "semibold";
+    letter-spacing: .2px;
+   
+
+}
+
+ .bhead img {
+    width: 10px;
+    filter: invert(0.6);
+}
+
+.subleft  .bsearch {
+    display: flex;
+    margin: 0 14px;
+    padding: 0 2px;
+    border-bottom: 2px solid #d8cece;
+
+}
+
+.subleft .bmaincheck
+{
+    display: block;
+}
+
+.subleft .left-brand .bsearch:hover {
+    border-bottom: 2px solid #2874f0;
+}
+
+.subleft .left-brand .bsearch img {
+    width: 11px;
+    height: 20px;
+    filter: invert(0.4);
+}
+
+.subleft .left-brand .bsearch input {
+    border: none;
+    color: #858080;
+    margin-left: 7px;
+}
+
+.subleft .left-brand .bsearch input:focus {
+    outline: none;
+
+}
+
+
+
+.subleft  .bmaincheck {
+
+    padding: 16px;
+    padding-top: 5px;
+}
+
+
+.subleft  .bcheck {
+    display: flex;
+    padding: 3px 0;
+    /* flex-flow: column; */
+}
+
+.subleft .bcheck label {
+    font-size: 13px;
+    font-family: "regular";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    padding: 5px 7px;
+    /* vertical-align:middle !important; */
+
+}
+.subleft .rating 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================== right ============================================== */
+
+
+
+
+
+
+
+
+.mainphone {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.phones {
+    padding: 24px 0 27px 24px;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: "regular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imagesec {
+    position: relative;
+    width: 200px;
+}
+
+.imagesec .phoneimage {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imagesec .phoneimage img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    margin: 0 auto;
+    right: 0;
+}
+
+.imagesec .add {
+    margin-top: 13px;
+    box-sizing: border-box;
+}
+
+.imagesec .add input {
+    /* visibility: hidden; */
+    border: none;
+    margin-left: 0;
+}
+
+.imagesec .add label {
+    vertical-align: middle;
+    margin-left: 5px;
+    font-family: "regular";
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+
+}
+
+.datasec {
+    display: flex;
+    padding-left: 25px;
+    width: 100%;
+    /* width: calc(100% -200px); */
+}
+
+.datasec .leftpart {
+    width: 58.33%;
+}
+
+
+
+.datasec .leftpart h1 {
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'semibold';
+    margin: 0;
+    letter-spacing: .05px;
+    margin-bottom: 0%;
+
+}
+
+.rate {
+    margin-top: 0;
+    padding-top: 1px;
+}
+
+.datasec .leftpart .rating {
+    background-color: #388e3c;
+    color: white;
+
+    width: fit-content;
+    padding: 3px 4px 2px 6px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 11.5px;
+    font-family: "semibold";
+}
+
+
+
+.datasec .leftpart .rating img {
+    height: 10px;
+    margin: 2px 0 0 2px;
+}
+
+.datasec .leftpart .review {
+    padding-left: 3px;
+    font-weight: 500;
+    font-family: "semibold";
+    color: #878787;
+    font-size: 13.3px;
+    vertical-align: text-top;
+
+}
+
+.datasec .leftpart ul {
+    margin-top: 14px;
+    line-height: 22px;
+    list-style-type: none;
+    font-size: 13.3px;
+    font-family: "regular";
+    font-weight: 400;
+    padding-left: 0;
+
+}
+
+.datasec .leftpart ul li::before {
+    content: "•";
+    color: #c2c2c2;
+    padding-right: 5px;
+
+}
+
+.datasec .rightpart {
+    width: 41.66%;
+    padding-left: 60px;
+
+}
+
+
+.datasec .rightpart .right {
+    margin-top: -3px;
+
+}
+
+.datasec .rightpart img {
+    height: 21px;
+    padding-left: 16px;
+    padding-top: 3px;
+
+    /* vertical-align: top; */
+}
+
+.datasec .rightpart .price {
+    font-size: 23.5px;
+    font-family: "semibold";
+    letter-spacing: .1px;
+    vertical-align: top;
+
+
+}
+
+.datasec .rightpart .strike {
+    color: #a5a0a0;
+    font-size: 12.8px;
+    font-family: 'regular';
+    /* padding-top: 10px; */
+    padding-right: 4px;
+    letter-spacing: 0;
+}
+
+
+.datasec .rightpart .off {
+    color: #4a984e;
+    font-size: 12px;
+    padding-top: 8px;
+    font-weight: 600;
+    letter-spacing: -.3px;
+    font-family: "semibold";
+
+}
+
+.datasec .rightpart .free {
+    font-size: 11px;
+    line-height: 2.5;
+    letter-spacing: .15px;
+}
+
+.datasec .rightpart .save {
+    font-size: 11.5px;
+    color: #388e3c;
+    font-family: "semibold";
+    padding-top: 1px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    letter-spacing: -0.05px;
+}
+
+.datasec .rightpart .exchange {
+    font-size: 13px;
+    letter-spacing: .15px;
+}
+
+.datasec .rightpart .exchange span {
+    font-weight: 500;
+    font-family: "semibold";
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================  */
