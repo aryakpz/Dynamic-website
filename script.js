@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ==============================================left sec===============================================//
             const list =new Set()
+            const select =new Set()
            
             data.left.forEach(item => {
                 const top = document.querySelector('.left-filter');
@@ -95,11 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 
 
                 const price =document.querySelector('.left-price');
+
+                
                 price.innerHTML = item.price;
-                const limit = document.createElement('input');
-                limit.type = 'range';
+
+                const bar=document.createElement('div')
+                bar.className='rangebar'
+                price.appendChild (bar)
+                const limit = document.createElement('div');
+                limit.className='range'
+                limit.innerHTML=`<div class="mainrange">
+                                    <div class="sub">
+                                    <div class="lsub">
+                                    </div>
+                                    <div class="rsub">
+                                    </div>
+
+                                    </div>
+
+                                 </div>`
+                
                 price.appendChild(limit);
-        
 
            
             const brand = document.querySelector('.left-brand');
@@ -119,18 +136,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const bdrop=document.querySelector('.bhead')
             bdrop.addEventListener('click',()=>{
-
-                console.log('dd')
-                bsearch.style.display = bsearch.style.display ==='flex'?'none':'flex'
-                bmaincheck.style.display = bmaincheck.style.display==='block'?'none':'block'
-                // img.style.transform= img.style.transform==='rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
+                bsearch.style.display = bsearch.style.display ==='none'?'flex':'none'
+                bmaincheck.style.display = bmaincheck.style.display==='none'?'block':'none'
+                bdrop.img.style.transform= bdrop.img.style.transform==='rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
             
             })
     
 
             const bmaincheck = document.createElement('div');
             bmaincheck.className = 'bmaincheck';
-
+           
 
             function brandfilter(names) {
                 bmaincheck.innerHTML = ''; 
@@ -166,21 +181,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     })
 
-
-
-
-
                 });
                 brand.appendChild(bmaincheck) 
 
 
             }
-
+            
             brandfilter(item.brandnames);
 
                  //======================== left search ===================================//
 
-            const inputSearch = bsearch.querySelector('.inputsearch');
+          
+          
+           const inputSearch = bsearch.querySelector('.inputsearch');
             inputSearch.addEventListener('input', (e) => {
                 const value = e.target.value.toLowerCase();
                 // console.log(value);
@@ -192,36 +205,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         //========= rating
+
+
+
+
+
+
             const mainrate=document.querySelector('.rating')
 
             const rating = document.createElement('div');
             rating.className = 'bhead';
-            rating.innerHTML = `<span>${item.brand}</span> <img src="assets/icons/angle-up-solid.svg">`;
+            rating.innerHTML = `<span>${item.rating}</span> <img src="assets/icons/angle-up-solid.svg">`;
             mainrate.appendChild(rating);
          
+            rating.addEventListener('click',()=>{
+                bmainrate.style.display=   bmainrate.style.display==='none'?'block':'none'
+            
+            })
+        
 
-
+            const bmainrate=document.createElement('div')
+            bmainrate.className='bmaincheck'
             item.rates.forEach(name => {
                 const bcheck = document.createElement('div');
                 bcheck.className = 'bcheck';
 
                 const check = document.createElement('input');
                 check.type = 'checkbox';
-                check.value=name
+                check.value= name
+
                 bcheck.appendChild(check);
                 const label = document.createElement('label');
                 label.innerHTML = name;
+
                 bcheck.appendChild(label);
+       
+                check.addEventListener('change',(e)=>{
+                    if(check.checked)
 
-                mainrate.appendChild(bcheck);
-            }
-            
-            )
+                        {  
+                            select.add(check.value)
+                            // console.log(select)
+                        }
+                        else{
+                            select.delete(check.value)
+                            
+                        }
+                        ramfilter()
+                })                
 
+                bmainrate.appendChild(bcheck);
+                mainrate.appendChild(bmainrate)
+            } )
 
 
             
         });
+
+
+        function ramfilter() {
+            if (select.size === 0) {
+                display(data.phonesec);
+                // console.log(select)
+            } 
+            else 
+            {
+                console.log(select)
+                const filter= data.phonesec.filter(item => {
+                    // return Array.from(select).some(value => item.name.startsWith(value));
+                    select.has(item.data)
+                
+                });
+             
+
+                display(filter);
+        
+            }
+        }
             
 
 
@@ -272,10 +332,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 const links = document.querySelector('.links');
                 data.link.forEach(item => {
                     const list = document.createElement('span');
-                    list.innerHTML = item;
-                    links.appendChild(list);
-                });
+                    list.innerHTML = item.name;
+                    list.id=item.id
 
+
+
+
+
+
+                    links.appendChild(list);
+
+
+
+
+                    list.addEventListener('click',(e)=>{
+
+                        list.style.color= list.style.color==='blue'?'black':'blue'
+                        list.style.fontFamily= list.style.fontFamily==='semibold'?'regular':'semibold'
+                        list.style.borderBottom= list.style.borderBottom==='2px solid blue'?'2px transparent':'2px solid blue'
+
+                        if (list.id === 'low') {
+                            lowtohigh();
+                        } else if (list.id === 'high') {
+                            hightolow();
+                        }
+                
+                });
+            }) 
+
+            function lowtohigh() {
+                console.log('Sorting low to high');
+                const pricesort = [...data.phonesec]
+                    .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+                display(pricesort);
+            }
+    
+
+            // Function to sort from high to low
+
+
+            function hightolow() {
+                console.log('Sorting high to low');
+                const pricesort = [...data.phonesec]
+                    .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+
+                display(pricesort);
+            }
 
 
 // ===============================  phone sec   =============================================
@@ -286,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             function display(products) {
-                console.log(products)
+             
                 mainsec.innerHTML = '';
                 products.forEach(item => {
                     const mainph = document.createElement('div');
@@ -346,7 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const right = document.createElement('div');
                     right.className = 'right';
-                    right.innerHTML = `<span class="price">${item.price}</span><img src="${item.img}">`;
+                    right.innerHTML = `<span class="price"> ₹${item.price}</span><img src="${item.img}">`;
                     rightdata.appendChild(right);
 
                     const off = document.createElement('div');

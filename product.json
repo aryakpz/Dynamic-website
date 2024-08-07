@@ -52,35 +52,42 @@
             "icon": "/assets/icons/angle-down-solid.svg"
         }
     ],
-    
-
-    "left":[
+    "left": [
         {
-        "filter":"Filters",
-        "category":"CATEGORIES",
-        "image":"/assets/icons/leftarrowsmall.svg",
-        "access":"Mobiles & Accessories",
-        "mobile":"Mobiles",
-        "price":"PRICE",
-        "min":"Min",
-        "max":"Max",
-        "brand":"BRAND",
-
-        "bimg":"assets/icons/blacksearch.svg",
-        "brandnames":["SAMSUNG","vivo","OPPO","redmi","POCO","iPhone","MOTOROLA"],
-
-        "more":"175 MORE",
-        
-        "toparrow":"assets/icons/angle-up-solid.svg",
-       
-        "rating":"CUSTOMER RATING",
-        
-        "rates":[
-            "4<img src=\"assets/icons/whitestar.svg\"> & above",
-            "3<img src=\"assets/icons/whitestar.svg\"> & above"]
-        } 
-
-        
+            "filter": "Filters",
+            "category": "CATEGORIES",
+            "image": "/assets/icons/leftarrowsmall.svg",
+            "access": "Mobiles & Accessories",
+            "mobile": "Mobiles",
+            "price": "PRICE",
+            "min": "Min",
+            "max": "Max",
+            "brand": "BRAND",
+            "bimg": "assets/icons/blacksearch.svg",
+            "brandnames": [
+                "SAMSUNG",
+                "vivo",
+                "OPPO",
+                "redmi",
+                "POCO",
+                "iPhone",
+                "MOTOROLA"
+            ],
+            "more": "175 MORE",
+            "toparrow": "assets/icons/angle-up-solid.svg",
+            "rating": "CUSTOMER RATING",
+            "rates": [
+                "4<img src=\"assets/icons/whitestar.svg\"> & above",
+                "3<img src=\"assets/icons/whitestar.svg\"> & above"
+            ],
+            "ram":"RAM",
+            "ramdata":[
+                {"lable":"3 GB"},
+                {"lable":"4 GB"},
+                {"lable":"5 GB "},
+                {"lable":"1 GB and Below "},
+                {"lable":"8 GB and Above"}]
+        }
     ],
     "right": [
         {
@@ -96,260 +103,253 @@
             "icon": "/assets/icons/angle-right-solid.svg"
         }
     ],
-   
-    "content": "Showing 1 – 24 of 9,941 results for \"mobiles\"" ,
-    "link":["Sort By",
-        "Relevance",
-        "Popularity",
-        "Price -- Low to High",
-        "Price -- High to Low",
-        "Newest First"],
-
-
-        "phonesec":[
-
-
-            {
-                "id":"iphone",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Apple iPhone 15 (Black, 128 GB)",
-                "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
-                "review":"45,052 Ratings & 2,414 Reviews",
-                "speciality":[
-                    "128 GB ROM",
-                    "15.49 cm (6.1 inch) Super Retina XDR Display",
-                    "48MP + 12MP | 12MP Front Camara",
-                    "A16 Bionic Chip, 6 Core Processor Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹65,499",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹79,600",
-                "off":"17% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹50,150</span> Off on Exchange"
-
-
-            },
-            {
-                "id":"iphone",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Apple iPhone 15 (Pink, 256 GB)",
-                "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
-                "review":"44,931 Ratings & 2,408 Reviews",
-                "speciality":[
-                    "256 GB ROM",
-                    "15.49 cm (6.1 inch) Super Retina XDR Display",
-                    "48MP + 12MP | 12MP Front Camara",
-                    "A16 Bionic Chip, 6 Core Processor Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹81,999",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹89,600",
-                "off":"8% off",
-                "free":"Free delivery",
-                "save":"Save extra with combo offers",
-                "exchange":"Upto <span>₹53,000</span> Off on Exchange"
-
-
-            },
-            {
-                "id":"iphone",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Apple iPhone 14 Plus (BLue, 128 GB)",
-                "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
-                "review":"77,251 Ratings & 4,327 Reviews",
-                "speciality":[
-                    "128 GB ROM",
-                    "17.02 cm (6.7 inch) Super Retina XDR Display",
-                    "12MP + 12MP | 12MP Front Camara",
-                    "A15 Bionic Chip, 6 Core Processor Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹56,999",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹79,600",
-                "off":"28% off",
-                "free":"Free delivery",
-                "save":"Save extra with combo offers",
-                "exchange":"Upto <span>₹50,150</span> Off on Exchange"
-
-
-            },
-            {
-                "id":"redmi",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"REDMI 13C (Starfrost White, 128 GB)",
-                "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
-                "review":"33,979 Ratings & 1,900 Reviews",
-                "speciality":[
-                    "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
-                    "17.12 cm (6.74 inch)HD+ Display",
-                    "50MP Rear Camara | 8MP Front Camara",
-                    "Helio G85 Processor",
-                    "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹7,699",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹11,999",
-                "off":"35% off",
-                "free":"Free delivery",
-                "save":"Save extra with combo offers",
-                "exchange":"Upto <span>₹6,500</span> Off on Exchange"
-
-
-            },
-            {   "id":"motorola",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Motorola (Mint Green, 128 GB)",
-                "data":"4.2<img src=\"assets/icons/whitestar.svg\">",
-                "review":"21,694 Ratings & 1,182 Reviews",
-                "speciality":[
-                    "8 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
-                    "16.51 cm (6.5 inch) Full HD+ Display",
-                    "50MP (OIS) + 8MP | 16MP Front Camara",
-                    "Dimensity Processor",
-                    "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹13,999",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹17,999",
-                "off":"22% off",
-                "free":"Free delivery",
-                "save":"Save extra with combo offers",
-                "exchange":"Upto <span>₹8,700</span> Off on Exchange"
-
-
-            },
-            {   "id":"iphone",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Apple iPhone 14 (Black, 128 GB)",
-                "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
-                "review":"45,052 Ratings & 2,414 Reviews",
-                "speciality":[
-                    "128 GB ROM",
-                    "15.49 cm (6.1 inch) Super Retina XDR Display",
-                    "48MP + 12MP | 12MP Front Camara",
-                    "A16 Bionic Chip, 6 Core Processor Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹65,499",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹79,600",
-                "off":"17% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹50,150</span> Off on Exchange"
-
-
-            },
-            {   "id":"oppo",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/r/f/-original-imagweqhwyards5f.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"OPPO A59 5G (Silk Gold, 128 GB)",
-                "data":"4.3<img src=\"assets/icons/whitestar.svg\">",
-                "review":"45,052 Ratings & 2,414 Reviews",
-                "speciality":[
-                    "4 GB ROM",
-                    "16.66 cm (6.56 inch) Super Retina XDR Display",
-                    "13MP + 2MP | 8MP Front Camara",
-                    "5000 mAh Battery",
-            
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹13,999",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹17,999",
-                "off":"22% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹7,700</span> Off on Exchange"
-
-
-            },
-            {   "id":"vivo",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/i/r/t3-lite-5g-v2356-vivo-original-imah27wmfgkergtx.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Vivo T3 Lite 5G (Vibrant Green, 128 GB)",
-                "data":"4.4<img src=\"assets/icons/whitestar.svg\">",
-                "review":"8,886 Ratings & 2,414 Reviews",
-                "speciality":[
-                    "4 GB ROM | 128 ROM",
-                    "16.66 cm (6.56 inch) Super Retina XDR Display",
-                    "50MP + 2MP | 12MP Front Camara",
-                    "5000 mAh Battery",
-                    "Dimensity 6300 Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹10,499",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹14,600",
-                "off":"27% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹8,950</span> Off on Exchange"
-
-
-            },
-            {
-
-
-                "id":"samsung",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
-                "data":"4.4<img src=\"assets/icons/whitestar.svg\">",
-                "review":"1,48,886 Ratings & 13,414 Reviews",
-                "speciality":[
-                    "8 GB RAM | 256 ROM",
-                    "16.26 cm (6.4 inch)Full HD+ Display",
-                    "12MP + 12MP | 32MP Front Camara",
-                    "4500 mAh Battery",
-                    "Snapdragon 888 Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹30,000",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹74,600",
-                "off":"59% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹20,950</span> Off on Exchange"
-
-
-            },
-            {   "id":"poco",
-                "phone":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
-                "compare":"Add to Compare",
-                "name":"POCO F5 5G (Electric Blue, 256 GB)",
-                "data":"4.4<img src=\"assets/icons/whitestar.svg\">",
-                "review":"48,886 Ratings & 714 Reviews",
-                "speciality":[
-                    "12 GB RAM | 256 ROM",
-                    "16.94 cm (6.67 inch)Full HD+ Display",
-                    "64MP + 8MP + 12MP | 16MP Front Camara",
-                    "5000 mAh Battery",
-                    "Snapdragon 7+Gen 2 Processor",
-                    "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
-                ],
-                "price":"₹33,999",
-                "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
-                "strike":"₹39,999",
-                "off":"15% off",
-                "free":"Free delivery",
-                "save":"Daily Saver",
-                "exchange":"Upto <span>₹20,950</span> Off on Exchange"
-
-
-            }
-        ]
-
+    "content": "Showing 1 – 24 of 9,941 results for \"mobiles\"",
+    "link": [
+        {
+            "name":  "Sort By",
+            "id": "sort"
+        },
+        {
+            "name": "Relevance",
+            "id": "relevence"
+        },
+        {
+            "name":   "Popularity",
+            "id": "popularity"
+        },
+        {
+            "name": "Price -- Low to High",
+            "id": "low"
+        },
+        {
+            "name": "Price -- High to Low",
+            "id": "high"
+        }
+    
+    ],
+    "phonesec": [
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Apple iPhone 15 (Black, 128 GB)",
+            "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                "128 GB ROM",
+                "15.49 cm (6.1 inch) Super Retina XDR Display",
+                "48MP + 12MP | 12MP Front Camara",
+                "A16 Bionic Chip, 6 Core Processor Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "65,499",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹79,600",
+            "off": "17% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Apple iPhone 15 (Pink, 256 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "44,931 Ratings & 2,408 Reviews",
+            "speciality": [
+                "256 GB ROM",
+                "15.49 cm (6.1 inch) Super Retina XDR Display",
+                "48MP + 12MP | 12MP Front Camara",
+                "A16 Bionic Chip, 6 Core Processor Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "81,999",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹89,600",
+            "off": "8% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹53,000</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Apple iPhone 14 Plus (BLue, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "77,251 Ratings & 4,327 Reviews",
+            "speciality": [
+                "128 GB ROM",
+                "17.02 cm (6.7 inch) Super Retina XDR Display",
+                "12MP + 12MP | 12MP Front Camara",
+                "A15 Bionic Chip, 6 Core Processor Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "56,999",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹79,600",
+            "off": "28% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "redmi",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "REDMI 13C (Starfrost White, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "33,979 Ratings & 1,900 Reviews",
+            "speciality": [
+                "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
+                "17.12 cm (6.74 inch)HD+ Display",
+                "50MP Rear Camara | 8MP Front Camara",
+                "Helio G85 Processor",
+                "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "7,699",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹11,999",
+            "off": "35% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹6,500</span> Off on Exchange"
+        },
+        {
+            "id": "motorola",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Motorola (Mint Green, 128 GB)",
+            "data": "4.2<img src=\"assets/icons/whitestar.svg\">",
+            "review": "21,694 Ratings & 1,182 Reviews",
+            "speciality": [
+                "8 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
+                "16.51 cm (6.5 inch) Full HD+ Display",
+                "50MP (OIS) + 8MP | 16MP Front Camara",
+                "Dimensity Processor",
+                "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "13,999",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹17,999",
+            "off": "22% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹8,700</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Apple iPhone 14 (Black, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                "128 GB ROM",
+                "15.49 cm (6.1 inch) Super Retina XDR Display",
+                "48MP + 12MP | 12MP Front Camara",
+                "A16 Bionic Chip, 6 Core Processor Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "65,499",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹79,600",
+            "off": "17% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "oppo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/r/f/-original-imagweqhwyards5f.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "OPPO A59 5G (Silk Gold, 128 GB)",
+            "data": "4.3<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                "4 GB ROM",
+                "16.66 cm (6.56 inch) Super Retina XDR Display",
+                "13MP + 2MP | 8MP Front Camara",
+                "5000 mAh Battery",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "13,999",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹17,999",
+            "off": "22% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹7,700</span> Off on Exchange"
+        },
+        {
+            "id": "vivo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/i/r/t3-lite-5g-v2356-vivo-original-imah27wmfgkergtx.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Vivo T3 Lite 5G (Vibrant Green, 128 GB)",
+            "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
+            "review": "8,886 Ratings & 2,414 Reviews",
+            "speciality": [
+                "4 GB ROM | 128 ROM",
+                "16.66 cm (6.56 inch) Super Retina XDR Display",
+                "50MP + 2MP | 12MP Front Camara",
+                "5000 mAh Battery",
+                "Dimensity 6300 Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "10,499",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹14,600",
+            "off": "27% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹8,950</span> Off on Exchange"
+        },
+        {
+            "id": "samsung",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+            "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
+            "review": "1,48,886 Ratings & 13,414 Reviews",
+            "speciality": [
+                "8 GB RAM | 256 ROM",
+                "16.26 cm (6.4 inch)Full HD+ Display",
+                "12MP + 12MP | 32MP Front Camara",
+                "4500 mAh Battery",
+                "Snapdragon 888 Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "30,000",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹74,600",
+            "off": "59% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹20,950</span> Off on Exchange"
+        },
+        {
+            "id": "poco",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "POCO F5 5G (Electric Blue, 256 GB)",
+            "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
+            "review": "48,886 Ratings & 714 Reviews",
+            "speciality": [
+                "12 GB RAM | 256 ROM",
+                "16.94 cm (6.67 inch)Full HD+ Display",
+                "64MP + 8MP + 12MP | 16MP Front Camara",
+                "5000 mAh Battery",
+                "Snapdragon 7+Gen 2 Processor",
+                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+            ],
+            "price": "33,999",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹39,999",
+            "off": "15% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹20,950</span> Off on Exchange"
+        }
+    ]
 }
