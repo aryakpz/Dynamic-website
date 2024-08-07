@@ -60,8 +60,20 @@
             "access": "Mobiles & Accessories",
             "mobile": "Mobiles",
             "price": "PRICE",
-            "min": "Min",
-            "max": "Max",
+            "min": [
+                "Min",
+                10000,
+                15000,
+                2000,
+                30000
+            ],
+            "max": [
+                "₹30000+",
+                10000,
+                15000,
+                2000,
+                30000
+            ],
             "brand": "BRAND",
             "bimg": "assets/icons/blacksearch.svg",
             "brandnames": [
@@ -74,19 +86,161 @@
                 "MOTOROLA"
             ],
             "more": "175 MORE",
-            "toparrow": "assets/icons/angle-up-solid.svg",
-            "rating": "CUSTOMER RATING",
-            "rates": [
+            "toparrow": "assets/icons/angle-up-solid.svg"
+        }
+    ],
+    "section": [
+        {
+            "name": "CUSTOMER RATING",
+            "mainid": "rating",
+            "common":"nothide",
+            "id": "rating",
+            "subid":"ratecheck",
+            "checkdatas": [
                 "4<img src=\"assets/icons/whitestar.svg\"> & above",
                 "3<img src=\"assets/icons/whitestar.svg\"> & above"
-            ],
-            "ram":"RAM",
-            "ramdata":[
-                {"lable":"3 GB"},
-                {"lable":"4 GB"},
-                {"lable":"5 GB "},
-                {"lable":"1 GB and Below "},
-                {"lable":"8 GB and Above"}]
+            ]
+        },
+        {
+            "name": "RAM",
+            "id": "ram",
+            "common":"nothide",
+            "subid":"ramcheck",
+            "checkdatas": [
+                "3 GB",
+                "4 GB",
+                "5 GB ",
+                "1 GB and Below ",
+                "8 GB and Above",
+                "G","P","E","6 GB","A","B"
+            ]
+        },
+        {
+            "name": "INITIAL STORAGE",
+            "id": "storage",
+            "common":"hide",
+            "subid":"storagecheck",
+            "checkdatas": [
+               " 256 GB & Above",
+                "128 - 255.9 GB",
+              "  64 - 127.9 GB",
+              "  32 - 63.9 GB",
+                "16 - 31.9 GB",
+               " 8 - 15.9 GB"
+            ]
+        },
+        {
+            "name": "BATTERY CAPACITY",
+            "id": "battery",
+            "common":"hide",
+            "subid":"batterycheck",
+            "checkdatas": [
+              "  1000 - 1999 mAh",
+               " 2000 - 2999 mAh",
+                "3000 - 3999 mAh",
+                "4000 - 4999 mAh",
+                "5000 - 5999 mAh",
+               " 5000 mAh Above",
+               " 6000 mAh & Above",
+                "A",
+               " B",
+                "E",
+               " G",
+               " Less than 1000 mAh",
+               " P"
+            ]
+        },
+        {
+            "name": "SCREEN SIZE",
+            "id": "screen",
+            "common":"hide",
+            "subid":"screencheck",
+            "checkdatas": [
+               " 5.7 - 5.9 inch",
+             "   5.5 - 5.6 inch",
+               " 5.2 - 5.4 inch",
+                "5 - 5.1 inch",
+               " 4.5 - 4.9 inch",
+                "4 - 4.4 inch",
+               " 3.5 - 3.9 inch",
+               " 3 - 3.4 inch",
+                "Less than 3 inch",
+                "6.4 inch & Above",
+               " 6 - 6.3 inch",
+               " 6 inch above"
+               
+                
+            ]
+        },
+        {
+            "name": "PRIMARY CAMARA",
+            "id": "camara",
+            "common":"hide",
+            "subid":"camaracheck",
+            "checkdatas": [
+               " 5 - 7.9 MP",
+              "  Below 5 MP",
+               " 8 - 11.9 MP",
+              "  12 - 12.9 MP",
+                "12 - 15.9 MP",
+                "13 - 15.9 MP",
+               " 16 - 20.9 MP",
+               " 21 - 31.9 MP",
+               " 21 MP Above",
+               " 32 - 47.9 MP",
+                "48 - 63.9 MP"
+            ]
+        },
+        {
+            "name": "SECONDARY CAMARA",
+            "id": "scam",
+            "common":"hide",
+            "subid":"scamcheck",
+            "checkdatas": [
+                "12 - 12.9 MP",
+               " 12 - 15.9 MP",
+               " 13 - 15.9 MP",
+                "16 - 20.9 MP",
+                "21 MP Above",
+                "21 MP & Above",
+               " 5 - 7.9 MP",
+               " 8 - 11.9 MP",
+                "Below 5 MP"
+            ]
+        },
+        {
+            "name": "PROCESSOR BAND",
+            "id": "processor",
+            "common":"hide",
+            "subid":"processorcheck",
+            "checkdatas": [
+               " AMD",
+                "Apple",
+               " ARM",
+               " Exynos",
+                "Google",
+               " HiSilicon",
+              "  Huawei",
+                "Intel",
+                "Mediatek",
+              "  NVIDIA",
+                "Qualcomm",
+                "Snapdragon",
+               " Spreadtrum",
+               " Unisoc"
+            ]
+        },
+        {
+            "name": "SPECCIALITY",
+            "id": "speciality",
+            "common":"hide",
+            "subid":"specialcheck",
+            "checkdatas": [
+               " Big Storage",
+                "Higher Performance",
+                "Long-Lasting Battery",
+                "Selfie Camera"
+            ]
         }
     ],
     "right": [
@@ -106,7 +260,7 @@
     "content": "Showing 1 – 24 of 9,941 results for \"mobiles\"",
     "link": [
         {
-            "name":  "Sort By",
+            "name": "Sort By",
             "id": "sort"
         },
         {
@@ -114,7 +268,7 @@
             "id": "relevence"
         },
         {
-            "name":   "Popularity",
+            "name": "Popularity",
             "id": "popularity"
         },
         {
@@ -125,7 +279,6 @@
             "name": "Price -- High to Low",
             "id": "high"
         }
-    
     ],
     "phonesec": [
         {
@@ -133,7 +286,7 @@
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
             "compare": "Add to Compare",
             "name": "Apple iPhone 15 (Black, 128 GB)",
-            "data":"4.6<img src=\"assets/icons/whitestar.svg\">",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
             "speciality": [
                 "128 GB ROM",

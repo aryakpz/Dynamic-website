@@ -441,11 +441,11 @@ body {
 
 }
 .subleft .left-price .rangebar{
-    height: 23px;
-    margin-bottom: -10px;
+    height: 26px;
+    margin-bottom: -6px;
     margin-top: 7px;
-    margin-right: 4px;
-    margin-left: 4px;
+    /* margin-right: 4px; */
+    /* margin-left: 4px; */
     background-color: #dad7d7;
 }
 
@@ -457,20 +457,96 @@ body {
 }
 
 
+.subleft .left-price .range .mainrange .lsub{
+    top: -3.5;
+    transform: translateX(0px);
+    left: -6.5px;
+    z-index: 1;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+   
+}
+.left-price .range .mainrange .lsub .lround{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    top: 3.5;
+}
 
+.subleft .left-price .range .mainrange .rsub{
+    top: -3.5;
+    transform: translateX(-1.19px);
+    right: -13.5px;
+    z-index: 1;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+   
+}
+.left-price .range .mainrange .rsub .rround{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #bababa;    
+    position: absolute;
+    background-color: rgb(250, 246, 246);
+    top: 3.5;
+}
+.left-price .range .mainrange .midd .submidd{
+    /* transform: translate(0px) scaleX(0.995); */
+    background-color: #2874f0;
+    /* transform-origin: left center; */
+    top: 3px;
+    height: 6px;
+    position: absolute;
+    width: 100%;
+}
+.minmax {
+    margin:5px -4px 0;
 
+    display: flex;
+    align-items: center;
+    flex-flow:row;
+    justify-content: stretch;
+    width: 100%;
+    padding-top: 15px;
+ 
+}
+.minmax .min select{
+    /* gap: 15px; */
+    /* flex-grow: 2; */
+    /* display: flex; */
+  
+}
+.minmax select{
+    background-color: white;
+    border: 1px solid rgb(216, 219, 216);
+    padding:2px 5px;
+    height: 24px;
+    font-family: "regular",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    display: flex;
+   
+    width: 100%;
+    border-radius: 1px;
 
-
-
-
-
-
-
-
-
-
+}
+.minmax .to{
+    margin: 0 9px;
+    font-size: 14px;
+    color: #878787;
+    font-family: "regular";
+}
+.minmax select .minvalues{
+    padding: 0 7px;
+}
 .left-brand{
 border-bottom: 1px solid rgb(233, 230, 230);
+padding-top: 2px;
 }
 
  .bhead {
@@ -482,19 +558,19 @@ border-bottom: 1px solid rgb(233, 230, 230);
     font-weight: 500;
     font-family: "semibold";
     letter-spacing: .2px;
-   
-
 }
 
  .bhead img {
     width: 10px;
     filter: invert(0.6);
+    transform: rotate(0deg);
 }
 
 .subleft  .bsearch {
     display: flex;
     margin: 0 14px;
     padding: 0 2px;
+
     border-bottom: 2px solid #d8cece;
 
 }
@@ -517,15 +593,20 @@ border-bottom: 1px solid rgb(233, 230, 230);
 .subleft .left-brand .bsearch input {
     border: none;
     color: #858080;
-    margin-left: 7px;
+    margin-left: 7.5px;
+    font-family: "regular";
+    letter-spacing: 0.2px;
+    font-size: 13px;
+    height: 15px;
+    bottom: -10px;
+    /* margin-bottom: -px; */
+    padding-bottom: 0;
 }
 
 .subleft .left-brand .bsearch input:focus {
     outline: none;
 
 }
-
-
 
 .subleft  .bmaincheck {
 
@@ -561,10 +642,22 @@ border-bottom: 1px solid rgb(233, 230, 230);
 
 
 
+.section  #hide,
+.section  #nothide{
+    /* display: none; */
+    border-bottom: 1px solid rgb(236, 233, 233);
+}
 
+.section  #nothide .bhead img{
+    transform: rotate(0deg);
+}
 
-
-
+.section  #hide .bhead img{
+    transform: rotate(180deg);
+}
+.section  #hide .bmaincheck{
+    display: none;
+}
 
 
 

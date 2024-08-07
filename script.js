@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // ==============================================left sec===============================================//
+            
+
             const list =new Set()
             const select =new Set()
            
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                      <span class="spandata"><img src="${item.image}">${item.access}</span>
                                      <p class="mobdata">${item.mobile}</p>`;
                 
-
+                
                 const price =document.querySelector('.left-price');
 
                 
@@ -106,17 +108,64 @@ document.addEventListener('DOMContentLoaded', () => {
                 const limit = document.createElement('div');
                 limit.className='range'
                 limit.innerHTML=`<div class="mainrange">
-                                    <div class="sub">
                                     <div class="lsub">
+                                         <div class="lround"></div>
+
                                     </div>
+                                    <div class="midd">
+                                    <div class="submidd"></div>
+                                    </div>
+
                                     <div class="rsub">
-                                    </div>
+                                       <div class="rround"></div>
 
                                     </div>
-
                                  </div>`
                 
                 price.appendChild(limit);
+
+
+                const minmax=document.querySelector('.minmax')
+                const min=document.querySelector('.min')
+                const select1=document.createElement('select')
+                item.min.forEach(minvalues=>{
+                    const values=document.createElement('option')
+                    values.innerHTML=minvalues
+                    values.className='minvalues'
+                    values.value=minvalues
+
+                    select1.appendChild(values)
+                    min.appendChild(select1)
+                })
+                
+                minmax.appendChild(min)
+                  const to =document.createElement('div')
+                  to.innerHTML='to'
+                  to.className='to'
+
+                  minmax.appendChild(to)
+               
+                const max=document.querySelector('.max')
+
+                const select2=document.createElement('select')
+                item.max.forEach(minvalues=>{
+                    const values=document.createElement('option')
+                    values.innerHTML=minvalues
+                    values.className='minvalues'
+                    values.value=minvalues
+
+                  
+                    select2.appendChild(values)
+                    max.appendChild(select2)
+                })
+
+                minmax.appendChild(max)
+
+
+            
+                // minmax.innerHTML=
+                price.appendChild(minmax)
+
 
            
             const brand = document.querySelector('.left-brand');
@@ -134,11 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-            const bdrop=document.querySelector('.bhead')
-            bdrop.addEventListener('click',()=>{
+         
+            bhead.addEventListener('click',()=>{
+                
                 bsearch.style.display = bsearch.style.display ==='none'?'flex':'none'
                 bmaincheck.style.display = bmaincheck.style.display==='none'?'block':'none'
-                bdrop.img.style.transform= bdrop.img.style.transform==='rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
+               
+                imgel.style.transform= imgel.style.transform==='rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
             
             })
     
@@ -189,6 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             brandfilter(item.brandnames);
 
+       
+
+            
                  //======================== left search ===================================//
 
           
@@ -203,30 +257,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 brandfilter(filter);
             });
 
+        } )
 
+
+        const imgel=document.querySelector('.bhead img')
+
+        function checkbox(){
+
+            if(list.size===0){
+               console.log('not')
+               display(data.phonesec)
+            }
+            else{
+                console.log('yes')
+       //    console.log(list)
+                                    
+                const filter=data.phonesec.filter(item=>
+                list.has(item.id.toLowerCase()) )
+
+                 display(filter);
+          }
+         
+
+        }
         //========= rating
 
 
 
+        const mainrate=document.querySelector('.section')
 
-
-
-            const mainrate=document.querySelector('.rating')
-
+        data.section.forEach(item=>{
+           const sectiondiv=document.createElement('div')
+           sectiondiv.className=item.id
+           sectiondiv.id=item.common
             const rating = document.createElement('div');
             rating.className = 'bhead';
-            rating.innerHTML = `<span>${item.rating}</span> <img src="assets/icons/angle-up-solid.svg">`;
-            mainrate.appendChild(rating);
-         
+            
+            rating.innerHTML = `<span>${item.name}</span> <img src="assets/icons/angle-up-solid.svg">`;
+            sectiondiv.appendChild(rating);
+            const image=document.querySelector('.section .bhead img')
+
+            console.log(image)
             rating.addEventListener('click',()=>{
-                bmainrate.style.display=   bmainrate.style.display==='none'?'block':'none'
+                bmainrate.style.display=  bmainrate.style.display==='block'?'none':'block'
+                image.style.transform= image.style.transform==='rotate(0deg)'?'rotate(180deg)':'rotate(0deg)';
+            
+
             
             })
         
 
             const bmainrate=document.createElement('div')
             bmainrate.className='bmaincheck'
-            item.rates.forEach(name => {
+            bmainrate.id=item.subid
+            item.checkdatas.forEach(name => {
                 const bcheck = document.createElement('div');
                 bcheck.className = 'bcheck';
 
@@ -255,10 +339,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 })                
 
                 bmainrate.appendChild(bcheck);
-                mainrate.appendChild(bmainrate)
-            } )
+                sectiondiv.appendChild(bmainrate)
+          
+            })
 
-
+           mainrate.appendChild( sectiondiv)
             
         });
 
@@ -285,24 +370,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
 
 
-        function checkbox(){
-
-            if(list.size===0){
-               console.log('not')
-               display(data.phonesec)
-            }
-            else{
-                console.log('yes')
-       //    console.log(list)
-                                    
-                const filter=data.phonesec.filter(item=>
-                list.has(item.id.toLowerCase()) )
-
-                 display(filter);
-          }
-         
-
-        }
 
 
 
