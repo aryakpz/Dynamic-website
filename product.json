@@ -1,21 +1,18 @@
 {
-    "nav": [
-        {
-            "fliplogo": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png",
-            "explore": "Explore",
-            "plus": "Plus",
-            "plogo": "assets/images/plus.png",
-            "search": "/assets/icons/searchsmall.svg",
-            "login": "Login",
-            "seller": "Become a Seller",
-            "more": "More ",
-            "down": "/assets/icons/angle-down-solid.svg",
-            "cartimg": "/assets/icons/cart.svg",
-            "cart": "Cart"
-        }
-    ],
-    "drop": [
-        {
+    "nav": [{
+        "fliplogo": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png",
+        "explore": "Explore",
+        "plus": "Plus",
+        "plogo": "assets/images/plus.png",
+        "search": "/assets/icons/searchsmall.svg",
+        "login": "Login",
+        "seller": "Become a Seller",
+        "more": "More ",
+        "down": "/assets/icons/angle-down-solid.svg",
+        "cartimg": "/assets/icons/cart.svg",
+        "cart": "Cart"
+    }],
+    "drop": [{
             "data": "Electronics",
             "icon": "/assets/icons/angle-down-solid.svg"
         },
@@ -52,48 +49,45 @@
             "icon": "/assets/icons/angle-down-solid.svg"
         }
     ],
-    "left": [
-        {
-            "filter": "Filters",
-            "category": "CATEGORIES",
-            "image": "/assets/icons/leftarrowsmall.svg",
-            "access": "Mobiles & Accessories",
-            "mobile": "Mobiles",
-            "price": "PRICE",
+    "left": [{
+        "filter": "Filters",
+        "category": "CATEGORIES",
+        "image": "/assets/icons/leftarrowsmall.svg",
+        "access": "Mobiles & Accessories",
+        "mobile": "Mobiles",
+        "price": "PRICE",
 
-            "min": [
-                "Min",
-                10000,
-                15000,
-                20000,
-                30000
-            ],
-            "max": [
-                "₹30000+",
-                10000,
-                15000,
-                20000,
-                30000
-            ],
+        "min": [
+            "Min",
+            10000,
+            15000,
+            20000,
+            30000
+        ],
+        "max": [
+            "₹30000+",
+            10000,
+            15000,
+            20000,
+            30000
+        ],
 
-            "brand": "BRAND",
-            "bimg": "assets/icons/blacksearch.svg",
-            "brandnames": [
-                "SAMSUNG",
-                "vivo",
-                "OPPO",
-                "redmi",
-                "POCO",
-                "iPhone",
-                "MOTOROLA"
-            ],
-            "more": "175 MORE",
-            "toparrow": "assets/icons/angle-up-solid.svg",
-            "assure": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
-        }
-    ],
-    "section": [
-        {
+        "brand": "BRAND",
+        "bimg": "assets/icons/blacksearch.svg",
+        "brandnames": [
+            "SAMSUNG",
+            "vivo",
+            "OPPO",
+            "redmi",
+            "POCO",
+            "iPhone",
+            "MOTOROLA"
+        ],
+        "more": "175 MORE",
+        "toparrow": "assets/icons/angle-up-solid.svg",
+        "assure": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+    }],
+    "section": [{
             "name": "CUSTOMER RATING",
             "common": "nothide",
             "id": "rating",
@@ -102,7 +96,7 @@
                 "4<img src=\"assets/icons/whitestar.svg\"> & above",
                 "3<img src=\"assets/icons/whitestar.svg\"> & above"
             ]
-        },
+        },                  
         {
             "name": "GST INVOICE AVAILABLE",
             "id": "gst",
@@ -257,8 +251,7 @@
             ]
         }
     ],
-    "right": [
-        {
+    "right": [{
             "val": "Home",
             "icon": "/assets/icons/angle-right-solid.svg"
         },
@@ -272,8 +265,7 @@
         }
     ],
     "content": "Showing 1 – 24 of 9,941 results for \"mobiles\"",
-    "link": [
-        {
+    "link": [{
             "name": "Sort By",
             "id": "sort"
         },
@@ -294,16 +286,15 @@
             "id": "high"
         }
     ],
-    "phonesec": [
-        {
+    "phonesec": [{
             "id": "iphone",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
             "compare": "Add to Compare",
             "name": "Apple iPhone 15 (Black, 128 GB)",
+            "heart": "assets/icons/heart.svg",
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "128 GB ROM",
                     "id": "rom"
                 },
@@ -319,18 +310,18 @@
                     "data": "A16 Bionic Chip, 6 Core Processor Processor",
                     "id": "processor"
                 },
-                {
+                {    
                     "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
                     "id": "warrenty"
-                }
+                }            
             ],
-            "price": "65,499",
-            "asure":"asure",
+            "price": "65,499",                   
+            "asure": "asure",               
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "17% off",
             "free": "Free delivery",
-            "save": "Daily Saver",
+            "save": "Daily Saver",       
             "exchange": "Upto <span>₹50,150</span> Off on Exchange"
         },
         {
@@ -338,10 +329,10 @@
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
             "compare": "Add to Compare",
             "name": "Apple iPhone 15 (Pink, 256 GB)",
+            "heart": "assets/icons/heart.svg",
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "44,931 Ratings & 2,408 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "256 GB ROM",
                     "id": "rom"
                 },
@@ -363,7 +354,7 @@
                 }
             ],
             "price": "81,999",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹89,600",
             "off": "8% off",
@@ -375,11 +366,11 @@
             "id": "iphone",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "Apple iPhone 14 Plus (BLue, 128 GB)",
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "77,251 Ratings & 4,327 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "128 GB ROM",
                     "id": "rom"
                 },
@@ -401,7 +392,7 @@
                 }
             ],
             "price": "56,999",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "28% off",
@@ -413,11 +404,11 @@
             "id": "redmi",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "REDMI 13C (Starfrost White, 128 GB)",
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "33,979 Ratings & 1,900 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
                     "id": "rom"
                 },
@@ -439,7 +430,7 @@
                 }
             ],
             "price": "7,699",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹11,999",
             "off": "35% off",
@@ -449,13 +440,13 @@
         },
         {
             "id": "motorola",
+            "heart": "assets/icons/heart.svg",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=70",
             "compare": "Add to Compare",
             "name": "Motorola (Mint Green, 128 GB)",
             "data": "4.2<img src=\"assets/icons/whitestar.svg\">",
             "review": "21,694 Ratings & 1,182 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "8 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
                     "id": "rom"
                 },
@@ -477,7 +468,7 @@
                 }
             ],
             "price": "13,999",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹17,999",
             "off": "22% off",
@@ -489,11 +480,11 @@
             "id": "iphone",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "Apple iPhone 14 (Black, 128 GB)",
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "128 GB ROM",
                     "id": "rom"
                 },
@@ -515,7 +506,7 @@
                 }
             ],
             "price": "65,499",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "17% off",
@@ -527,11 +518,11 @@
             "id": "oppo",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/r/f/-original-imagweqhwyards5f.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "OPPO A59 5G (Silk Gold, 128 GB)",
             "data": "4.3<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "4 GB RAM",
                     "id": "rom"
                 },
@@ -553,7 +544,7 @@
                 }
             ],
             "price": "13,999",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹17,999",
             "off": "22% off",
@@ -565,11 +556,11 @@
             "id": "vivo",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/i/r/t3-lite-5g-v2356-vivo-original-imah27wmfgkergtx.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "Vivo T3 Lite 5G (Vibrant Green, 128 GB)",
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "8,886 Ratings & 2,414 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "4 GB RAM | 128 ROM",
                     "id": "rom"
                 },
@@ -595,7 +586,7 @@
                 }
             ],
             "price": "10,499",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹14,600",
             "off": "27% off",
@@ -607,11 +598,11 @@
             "id": "samsung",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "1,48,886 Ratings & 13,414 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "8 GB RAM | 256 ROM",
                     "id": "rom"
                 },
@@ -637,7 +628,7 @@
                 }
             ],
             "price": "30,000",
-            "asure":"asure",
+            "asure": "asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹74,600",
             "off": "59% off",
@@ -649,11 +640,11 @@
             "id": "poco",
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
             "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "POCO F5 5G (Electric Blue, 256 GB)",
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "48,886 Ratings & 714 Reviews",
-            "speciality": [
-                {
+            "speciality": [{
                     "data": "12 GB RAM | 256 ROM",
                     "id": "rom"
                 },
@@ -687,106 +678,104 @@
             "exchange": "Upto <span>₹20,950</span> Off on Exchange"
         }
     ],
-    "footer": 
-        {
-            "foot1": [
-                {
-                    "name": "ABOUT",
-                    "loop":[
-                        "Contact Us",
-                        "About Us",
-                        "Careers",
-                        "Flipkart Stories",
-                        "Press",
-                        "Corporate Information"
-                    ]
-                },
-                {
-                    "name": "GROUP COMPANIES",
-                    "loop":[
-                        "Myntra",
-                        "Cleartrip",
-                        "Shopsy"
-                    ]
-                },
-                {
-                    "name": "HELP",
-                    "loop":[
-                        "Payments",
-                        "Shipping",
-                        "Cancellation & Returns",
-                        "FAQ",
-                        "Report Infrigement"
-                    ]
-                },
-                {
-                    "name": "CONSUMER POLICY",
-                    "loop": [
-                       
-                        " Cancellation & Returns",
-                        "  Terms Of Use",
-                        "  Security",
-                        " Privacy",
-                        " Sitemap",
-                        " Grievance Redressal",
-                        "EPR Compliance"
-                    ]
-                },
-               {
-                    "name":"Mail Us:",
-                    "loop":[
+    "footer": {
+        "foot1": [{
+                "name": "ABOUT",
+                "loop": [
+                    "Contact Us",
+                    "About Us",
+                    "Careers",
+                    "Flipkart Stories",
+                    "Press",
+                    "Corporate Information"
+                ]
+            },
+            {
+                "name": "GROUP COMPANIES",
+                "loop": [
+                    "Myntra",
+                    "Cleartrip",
+                    "Shopsy"
+                ]
+            },
+            {
+                "name": "HELP",
+                "loop": [
+                    "Payments",
+                    "Shipping",
+                    "Cancellation & Returns",
+                    "FAQ",
+                    "Report Infrigement"
+                ]
+            },
+            {
+                "name": "CONSUMER POLICY",
+                "loop": [
 
-                   " Flipkart Internet Private Limited,",
-                    
+                    " Cancellation & Returns",
+                    "  Terms Of Use",
+                    "  Security",
+                    " Privacy",
+                    " Sitemap",
+                    " Grievance Redressal",
+                    "EPR Compliance"
+                ]
+            },
+            {
+                "name": "Mail Us:",
+                "loop": [
+
+                    " Flipkart Internet Private Limited,",
+
                     "Buildings Alyssa, Begonia &",
-                    
-                   " Clove Embassy Tech Village,",
-                    
-                   " Outer Ring Road, Devarabeesanahalli Village,",
-                    
-                  "  Bengaluru, 560103,",
-                    
-                 "   Karnataka, India"
-                    ]
-                
-                },
-               
-                
-                {
-                    "name":"Registered Office Address:",
-                    "loop":[
+
+                    " Clove Embassy Tech Village,",
+
+                    " Outer Ring Road, Devarabeesanahalli Village,",
+
+                    "  Bengaluru, 560103,",
+
+                    "   Karnataka, India"
+                ]
+
+            },
+
+
+            {
+                "name": "Registered Office Address:",
+                "loop": [
 
                     "Flipkart Internet Private Limited,",
-                    
-                   " Buildings Alyssa, Begonia &",
-                    
-                   " Clove Embassy Tech Village,",
-                    
-                   " Outer Ring Road, Devarabeesanahalli Village,",
-                    
-                   " Bengaluru, 560103,",
-                    
+
+                    " Buildings Alyssa, Begonia &",
+
+                    " Clove Embassy Tech Village,",
+
+                    " Outer Ring Road, Devarabeesanahalli Village,",
+
+                    " Bengaluru, 560103,",
+
                     "Karnataka, India",
-                    
-                   " CIN : U51109KA2012PTC066107",
-                    
-                   " Telephone: 044-45614700 / 044-67415800"
-                    ]
-                    
-                }
-            ],
-            
-                "social":"Mail Us:",
-                "loop":["/assets/icons/f.svg","/assets/icons/x.svg","/assets/icons/youtube.svg"],
-        
-            "bottom": [
-                "<img src=\" /assets/icons/bag.svg\"><span>Become a Seller<span>",
-                "<img src=\" /assets/icons/star.svg\"><span>Advertise</span>",
-                "<img src=\" /assets/icons/gift.svg\"><span>Gift Cards</span>",
-                "<img src=\" /assets/icons/question.svg\"><span>Help Center</span>",
-                "@ 2007-2024<span>Flipkart.com</span>",
-                "<img src=\"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg\">"
-            ]
-        }
-    
+
+                    " CIN : U51109KA2012PTC066107",
+
+                    " Telephone:<span> 044-45614700</span> / <span>044-67415800</span>"
+                ]
+
+            }
+        ],
+
+        "social": "Mail Us:",
+        "loop": ["/assets/icons/f.svg", "/assets/icons/x.svg", "/assets/icons/youtube.svg"],
+
+        "bottom": [
+            "<img src=\" /assets/icons/bag.svg\"><span>Become a Seller<span>",
+            "<img src=\" /assets/icons/star.svg\"><span>Advertise</span>",
+            "<img src=\" /assets/icons/gift.svg\"><span>Gift Cards</span>",
+            "<img src=\" /assets/icons/question.svg\"><span>Help Center</span>",
+            "@ 2007-2024<span>Flipkart.com</span>",
+            "<img src=\"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg\">"
+        ]
+    }
+
 }

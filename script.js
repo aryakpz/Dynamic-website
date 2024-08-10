@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -57,13 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     list.innerHTML = `${item.data} <img src="${item.icon}">`;
                     dropdown.appendChild(list);
                 });
-    
 
 
 
 
 
- // =======================Searchbar event filter ==================================================//
+
+                // =======================Searchbar event filter ==================================================//
 
 
 
@@ -71,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 searchinput.addEventListener('input', (e) => {
                     const value = e.target.value.toLowerCase();
-                    const filter = data.phonesec.filter(item => 
+                    const filter = data.phonesec.filter(item =>
                         item.name.toLowerCase().includes(value));
                     display(filter);
                 });
@@ -79,36 +77,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// ==============================================left sec===============================================//
-            
+            // ==============================================  left sec  ===============================================//
 
-            const list =[]
-            const select =[]
-            const arr=[]
-           
+
+            const list = []
+            const select = []
+            const arr = []
+
             data.left.forEach(item => {
                 const top = document.querySelector('.left-filter');
                 top.innerHTML = item.filter;
-                
 
+                //    catagory
                 const category = document.querySelector('.left-category');
-                
+
                 category.innerHTML = `<p class="pdata">${item.category}</p>
                                      <span class="spandata"><img src="${item.image}">${item.access}</span>
                                      <p class="mobdata">${item.mobile}</p>`;
-                
-                
-                const price =document.querySelector('.left-price');
 
-                
+                // price
+                const price = document.querySelector('.left-price');
+
+
                 price.innerHTML = item.price;
 
-                const bar=document.createElement('div')
-                bar.className='rangebar'
-                price.appendChild (bar)
+                const bar = document.createElement('div')
+                // rangebar
+
+                bar.className = 'rangebar'
+                price.appendChild(bar)
                 const limit = document.createElement('div');
-                limit.className='range'
-                limit.innerHTML=`<div class="mainrange">
+                limit.className = 'range'
+                limit.innerHTML = `<div class="mainrange">
                                     <div class="lsub">
                                          <div class="lround"></div>
 
@@ -122,377 +122,384 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                     </div>
                                  </div>`
-                
+
                 price.appendChild(limit);
-                                     
-                const minmax=document.querySelector('.minmax')
-                const min=document.querySelector('.min')
-                const select1=document.createElement('select')
-                item.min.forEach(minvalues=>{
-                    const values=document.createElement('option')
-                    values.innerHTML=minvalues
-                    values.className='minvalues' 
-                    values.value=minvalues
+
+
+
+                // ====== minmax
+
+
+                const minmax = document.querySelector('.minmax')
+                const min = document.querySelector('.min')
+                const select1 = document.createElement('select')
+                item.min.forEach(minvalues => {
+                    const values = document.createElement('option')
+                    values.innerHTML = minvalues
+                    values.className = 'minvalues'
+                    values.value = minvalues
 
                     select1.appendChild(values)
                     min.appendChild(select1)
                 })
-                
+
                 minmax.appendChild(min)
-                  const to =document.createElement('div')
-                  to.innerHTML='to'
-                  to.className='to'
+                const to = document.createElement('div')
+                to.innerHTML = 'to'
+                to.className = 'to'
 
-                  minmax.appendChild(to)
-               
-                const max=document.querySelector('.max')
+                minmax.appendChild(to)
 
-                const select2=document.createElement('select')
-                item.max.forEach(minvalues=>{
-                    const values=document.createElement('option')
-                    values.innerHTML=minvalues
-                    values.className='minvalues'
-                    values.value=minvalues
+                const max = document.querySelector('.max')
+
+                const select2 = document.createElement('select')
+                item.max.forEach(minvalues => {
+                    const values = document.createElement('option')
+                    values.innerHTML = minvalues
+                    values.className = 'minvalues'
+                    values.value = minvalues
 
 
-                    select2.appendChild(values)   
-                    max.appendChild(select2)  
+                    select2.appendChild(values)
+                    max.appendChild(select2)
                 })
 
-                minmax.appendChild(max)       
-                // minmax.innerHTML=
+                minmax.appendChild(max)
+
                 price.appendChild(minmax)
 
 
+                //  brand
+                const brand = document.querySelector('.left-brand');
+                const bhead = document.createElement('div');
+                bhead.className = 'bhead';
+                bhead.innerHTML = `<span>${item.brand}</span> <img src="assets/icons/angle-up-solid.svg">`;
+                brand.appendChild(bhead);
 
-            const brand = document.querySelector('.left-brand');
-            const bhead = document.createElement('div');
-            bhead.className = 'bhead';
-            bhead.innerHTML = `<span>${item.brand}</span> <img src="assets/icons/angle-up-solid.svg">`;
-            brand.appendChild(bhead); 
-
-            const bsearch = document.createElement('div');
-            bsearch.className = 'bsearch';
-            bsearch.innerHTML = `
+                const bsearch = document.createElement('div');
+                bsearch.className = 'bsearch';
+                bsearch.innerHTML = `
                 <img src="${item.bimg}">
                 <input type="text" placeholder="Search Brand" class="inputsearch">`;
-            brand.appendChild(bsearch);
+                brand.appendChild(bsearch);
+
+
+                //   brandevent
+
+                bhead.addEventListener('click', () => {
+
+                    bsearch.style.display = bsearch.style.display === 'none' ? 'flex' : 'none'
+                    bmaincheck.style.display = bmaincheck.style.display === 'none' ? 'block' : 'none'
+
+                    imgel.style.transform = imgel.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+
+                })
+
+
+                const bmaincheck = document.createElement('div');
+                bmaincheck.className = 'bmaincheck';
+
+                //bramd check filter
+
+                function brandfilter(names) {
+                    bmaincheck.innerHTML = '';
+                    names.forEach(name => {
+                        const bcheck = document.createElement('div');
+                        bcheck.className = 'bcheck';
+                        const check = document.createElement('input');
+                        check.type = 'checkbox';
+                        check.value = name
+                        bcheck.appendChild(check);
+                        const label = document.createElement('label');
+                        label.innerHTML = name;
+                        bcheck.appendChild(label);
+
+                        bmaincheck.appendChild(bcheck);
 
 
     
-         
-            bhead.addEventListener('click',()=>{
-                
-                bsearch.style.display = bsearch.style.display ==='none'?'flex':'none'
-                bmaincheck.style.display = bmaincheck.style.display==='none'?'block':'none'
-               
-                imgel.style.transform= imgel.style.transform==='rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
-            
+                        // ============ Checkbox filter ==============// 
+
+
+                        check.addEventListener('change', (e) => {
+                            if (check.checked) {
+                                list.push(check.value.toLowerCase())
+                                console.log(list)
+                            } else {
+                                list.pop()
+                                console.log(list)
+                            }
+
+                            checkbox()
+
+                        })
+
+
+                    });
+                      brand.appendChild(bmaincheck)
+
+                    const p = document.createElement('p')
+                    p.className = 'more'
+                    p.innerHTML = item.more
+                    bmaincheck.appendChild(p)
+
+                }
+                brandfilter(item.brandnames);
+
+                //asure filter
+
+                const assure = document.querySelector('.assured')
+                assure.innerHTML = ` <div><input type="checkbox" class="asurecheck" value="asure"><img src="${item.assure}"></div> 
+                <div class="ques"><span>?</span  `
+
+                const asurecheck = document.querySelector('.asurecheck')
+                const search = []
+                asurecheck.addEventListener('change', (e) => {
+
+                    if (asurecheck.checked) {
+                        search.push(asurecheck.value)  
+        
+                    } 
+                    else {
+                        search.pop()
+                        console.log("no")
+                    }
+                    asurefunction()
+                })
+
+
+                // function asurefunction() {
+                //    
+                //         console.log("noo")
+                //     } else {
+                //         console.log('te')
+                //     }
+                // }
+
+                function asurefunction()  {
+
+                    if (select.length == 0) {
+    
+                        display(data.phonesec)  
+                        console.log(search)   
+                    } else {
+                        console.log(search)  
+                        const filter = data.phonesec.filter(item =>
+                            select.includes(item.asure))
+                          
+    
+                        display(filter);
+                    }
+    
+    
+                }
+
+
+
+                //======================== left search ===================================//
+
+
+
+                const inputSearch = bsearch.querySelector('.inputsearch');
+                inputSearch.addEventListener('input', (e) => {
+                    const value = e.target.value.toLowerCase();
+                    // console.log(value);
+                    const filter = item.brandnames.filter(name =>
+                        name.toLowerCase().includes(value)
+                    );
+                    brandfilter(filter);
+                });
+
             })
-    
 
-            const bmaincheck = document.createElement('div');
-            bmaincheck.className = 'bmaincheck';
+               
+            const imgel = document.querySelector('.bhead img')
+
+            function checkbox() {
+
+                if (list.length == 0) {
+
+                    display(data.phonesec)     
+                } else {
            
+                    const filter = data.phonesec.filter(item =>
+                        list.includes(item.id.toLowerCase()))
 
-            function brandfilter(names) {
-                bmaincheck.innerHTML = ''; 
-                names.forEach(name => {
+                    display(filter);
+                }
+
+
+            }
+            //  ========= rating  =======
+
+
+
+            const mainrate = document.querySelector('.section')
+
+            data.section.forEach(item => {
+                const sectiondiv = document.createElement('div');
+                sectiondiv.className = item.id;
+                sectiondiv.id = item.common;
+
+                const rating = document.createElement('div');
+                rating.className = 'bhead';
+
+                rating.innerHTML = `<span>${item.name}</span> <img src="assets/icons/angle-up-solid.svg" class="image">`;
+                sectiondiv.appendChild(rating);
+
+
+                const bmainrate = document.createElement('div');
+                bmainrate.className = 'bmainrate';
+
+                sectiondiv.appendChild(bmainrate);
+
+                mainrate.appendChild(sectiondiv);
+
+                // dropdown event  ====
+                rating.addEventListener('click', () => {
+                    const image = rating.querySelector('.image');
+
+                    image.style.transform = image.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+
+                    if (bmainrate.style.display === 'none') {
+                        bmainrate.style.display = 'block';
+                        console.log(bmainrate.style.display);
+                    } else {
+                        bmainrate.style.display = 'none';
+                        console.log(bmainrate.style.display);
+                    }
+                });
+
+
+
+                bmainrate.id = item.subid
+                item.checkdatas.forEach(name => {
                     const bcheck = document.createElement('div');
                     bcheck.className = 'bcheck';
+
                     const check = document.createElement('input');
                     check.type = 'checkbox';
-                    check.value=name
+                    check.value = name
+
                     bcheck.appendChild(check);
                     const label = document.createElement('label');
                     label.innerHTML = name;
+
                     bcheck.appendChild(label);
 
-                    bmaincheck.appendChild(bcheck);
-
-                
-
-                // ============ Checkbox filter ==============//
-
-
-                    check.addEventListener('change',(e)=>{
-                        if(check.checked){
-                               list.push(check.value.toLowerCase())
-                               console.log(list)
-                        }
-                        else{
-                             list.pop()
-                             console.log(list)
-                        }
-
-
-                        checkbox()
-
-                    })
-
-                });
-
-                brand.appendChild(bmaincheck) 
-
-                const p=document.createElement('p')
-                p.className='more'
-                p.innerHTML=item.more
-                bmaincheck.appendChild(p)
-                
-            }
-            
-            brandfilter(item.brandnames);
-
-
-
-            //asure filter
-
-            const assure=document.querySelector('.assured')
-            assure.innerHTML=` <div><input type="checkbox" class="asurecheck" value="asure"><img src="${item.assure}"></div> 
-             <div class="ques"><span>?</span  `
-
-            const asurecheck=document.querySelector('.asurecheck')
-            const search=[]
-            asurecheck.addEventListener('change',(e)=>{
-
-                if(asurecheck.checked){
-                    search.push(asurecheck.value)
-                    console.log(search)
-                }
-                else{
-                    search.pop()
-                }
-                 asurefunction()    
-            })
-  
-
-            function asurefunction(){
-                if(search.size === 0){
-                    // display()
-                    console.log("noo")
-                }
-                else{
-                    console.log('te')
-                }
-            }
-  
-
-       
-
-            
-                 //======================== left search ===================================//
-
-          
-          
-           const inputSearch = bsearch.querySelector('.inputsearch');
-            inputSearch.addEventListener('input', (e) => {
-                const value = e.target.value.toLowerCase();
-                // console.log(value);
-                const filter = item.brandnames.filter(name =>
-                    name.toLowerCase().includes(value)
-                );
-                brandfilter(filter);
-            });
-
-        } )
-
-
-        const imgel=document.querySelector('.bhead img')
-
-        function checkbox(){
-
-            if(list.length==0){
-      
-               display(data.phonesec)
-            }
-            else{
-                                        
-           const filter=data.phonesec.filter(item=>
-            list.includes(item.id.toLowerCase()) )
-
-                 display(filter);      
-          }
-         
-
-        }
-        //========= rating
-
-
-
-        const mainrate=document.querySelector('.section')
-    
-
-        data.section.forEach(item=>{
-           const sectiondiv=document.createElement('div')
-           sectiondiv.className=item.id
-           sectiondiv.id=item.common
-            const rating = document.createElement('div');
-            rating.className = 'bhead';
-            
-            rating.innerHTML = `<span>${item.name}</span> <img src="assets/icons/angle-up-solid.svg" class="image">`;
-            sectiondiv.appendChild(rating);
-
-
-            const image=document.querySelector('.section .bhead .image')
-
-            // console.log(image)        
-            rating.addEventListener('click',()=>{
-    
-
-                    if (bmainrate.style.display ==='none') {
-                        bmainrate.style.display = 'block';
-                        console.log(  bmainrate.style.display)
-                    } 
-                    else {
-                        bmainrate.style.display = 'none';
-                        console.log(  bmainrate.style.display)
-                    }
-                });
-                
-            //     // .section =.bheadimg.style.transform= image.style.transform==='rotate(0deg)'?'rotate(180deg)':'rotate(0deg)';
-                //    bmainrate.style.display=  bmainrate.style.display==='none'?'block':'none'
-        
-                // image.style.rotate=image.style.rotate==='rotate(0deg)'?'rotate(180deg)':'rotate(0deg)';
-
-            
-            
-        
-
-            const bmainrate=document.createElement('div')
-            bmainrate.className='bmaincheck'
-            bmainrate.id=item.subid
-            item.checkdatas.forEach(name => {
-                const bcheck = document.createElement('div');
-                bcheck.className = 'bcheck';
-
-                const check = document.createElement('input');
-                check.type = 'checkbox';
-                check.value= name
-
-                bcheck.appendChild(check);
-                const label = document.createElement('label');
-                label.innerHTML = name;
-
-                bcheck.appendChild(label);
-       
-                check.addEventListener('change',(e)=>{
-                    if(check.checked)
-
-                        {  
+                    check.addEventListener('change', (e) => {
+                        if (check.checked) {
                             select.push(check.value)
-                            arr.push(bmainrate.id)
+                             arr.push(bmainrate.id)
                             // console.log(arr)
-                        }
-                        else{
+                        } else {
                             select.pop()
                             arr.pop()
-                            
-                        }
+
+                        }   
                         filter()
-                })            
-            
+                    })
 
-                bmainrate.appendChild(bcheck);
-                sectiondiv.appendChild(bmainrate)
-          
-            })
+                      
+                    bmainrate.appendChild(bcheck);
+                    sectiondiv.appendChild(bmainrate)
+              
+                })
+                
+                mainrate.appendChild(sectiondiv)
 
-           mainrate.appendChild( sectiondiv)
-            
-        });
-
-
-
-    // 
-
-    // function ramfilter(){
-    //     console.log("hjhdjh")
-    // }
-        
-
-        function filter() {
-            if (select.size === 0) {
-                display(data.phonesec);
-                console.log(select)
-                // console.log("no")
-            } 
-            else 
-            {
-                // console.log(select)
-                // if(arr =='ramcheck')
-                //     {
-                //         // console.log("bhbh")
-                //         ramfilter()
-                //     }
+            });
 
 
 
-                // const filter= data.phonesec.speciality.filter(item =>{
-                //     item.id.includes()
-                // })
-                display(data.phonesec);
-                // const filter= data.phonesec.filter(item => {
+            // 
+
+            // function ramfilter(){
+            //     console.log("hjhdjh")
+            // }
+
+
+            function filter() {
+                if (select.size === 0) {
+                    display(data.phonesec);
+                    console.log(select)
+                    // console.log("no")
+                } else {
+                    // console.log(select)
+                    // if(arr =='ramcheck')
+                    //     {
+                    //         // console.log("bhbh")
+                    //         ramfilter()
+                    //     }
+
+
+
+                    // const filter= data.phonesec.speciality.filter(item =>{
+                    //     item.id.includes()
+                    // })
+                    display(data.phonesec);
+                    // const filter= data.phonesec.filter(item => {
                     // return Array.from(select).some(value => item.name.startsWith(value));
                     // select.has(item.data)
-                       
-         // });
-        
-        }
-        }
-            
 
-   
-// ========================================   right sec==============================================
+                    // });
+
+                }
+            }
 
 
-                const home = document.querySelector('.homedata');
-                data.right.forEach(item => {
-                    const list = document.createElement('span');
-                    list.innerHTML = `<span id="p">${item.val} </span><img src="${item.icon}">`;
-                    home.appendChild(list);
 
-                    
+            // ========================================   right sec==============================================
+
+
+            const home = document.querySelector('.homedata');
+            data.right.forEach(item => {
+                const list = document.createElement('span');
+                list.innerHTML = `<span id="p">${item.val} </span><img src="${item.icon}">`;
+                home.appendChild(list);
+
+
+            });
+
+            const content = document.querySelector('.contentdata');
+            content.innerHTML = data.content;
+
+            const links = document.querySelector('.links');
+            data.link.forEach(item => {
+                const list = document.createElement('span');
+                list.innerHTML = item.name;
+                list.id = item.id
+
+                links.appendChild(list);
+
+                list.addEventListener('click', (e) => {
+
+                    list.style.color = list.style.color === 'blue' ? 'black' : 'blue'
+                    list.style.fontFamily = list.style.fontFamily === 'semibold' ? 'regular' : 'semibold'
+                    list.style.borderBottom = list.style.borderBottom === '2px solid blue' ? '2px transparent' : '2px solid blue'
+
+                    if (list.id === 'low') {
+                        lowtohigh();
+                    } else if (list.id === 'high') {
+                        hightolow();
+                    }
+
                 });
-
-                const content = document.querySelector('.contentdata');
-                content.innerHTML = data.content;
-
-                const links = document.querySelector('.links');
-                data.link.forEach(item => {
-                    const list = document.createElement('span');
-                    list.innerHTML = item.name;
-                    list.id=item.id
-
-                    links.appendChild(list);
-
-                    list.addEventListener('click',(e)=>{
-
-                        list.style.color= list.style.color==='blue'?'black':'blue'
-                        list.style.fontFamily= list.style.fontFamily==='semibold'?'regular':'semibold'
-                        list.style.borderBottom= list.style.borderBottom==='2px solid blue'?'2px transparent':'2px solid blue'
-
-                        if (list.id === 'low') {
-                            lowtohigh();
-                        } else if (list.id === 'high') {
-                            hightolow();
-                        }
-                
-                });
-            }) 
+            })
 
             function lowtohigh() {
-              
+
                 const pricesort = [...data.phonesec]
                     .sort((a, b) => parseFloat(a.price) > parseFloat(b.price));
                 display(pricesort);
             }
-    
+
 
             // Function to sort from high to low
 
 
             function hightolow() {
-               
+
                 const pricesort = [...data.phonesec]
                     .sort((a, b) => parseFloat(b.price) > parseFloat(a.price));
 
@@ -500,15 +507,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
 
-// ===============================  phone sec   =============================================
+            // ===============================  phone sec   =============================================
 
- 
+
             const mainsec = document.querySelector('.mainphones');
 
-            
+
 
             function display(products) {
-             
+
                 mainsec.innerHTML = '';
                 products.forEach(item => {
                     const mainph = document.createElement('div');
@@ -544,33 +551,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     tick.appendChild(label);
 
                     phone.appendChild(tick);
-                    mainph.appendChild(phone);   
+                    mainph.appendChild(phone);
+
+
+
+                    // filter: invert(0.4);
+
+                    const heart = document.createElement('div')
+                    heart.className = 'heart'
+
+                    const subhrt = document.createElement('div')
+                    subhrt.classList = 'subhrt'
+
+                    subhrt.innerHTML = `<img src="${item.heart}" class="hrtimg">`
+
+
+                    heart.appendChild(subhrt)
+                    phone.appendChild(heart)
+
+
+                    subhrt.addEventListener('click', () => {
+                        console.log('ddd')
+
+                        const himg = subhrt.querySelector('.hrtimg')
+                        himg.style.filter = himg.style.filter === 'invert(0)' ? 'invert(0.5)' : 'invert(0)';
+                    })
 
 
 
 
-                    const heart=document.createElement('div')
-                    heart.className='heart'
-                    
-                    
-                    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
                     const h1 = document.createElement('h1');
                     h1.innerHTML = item.name;
                     leftdata.appendChild(h1);
@@ -584,7 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.speciality.forEach(speciality => {
                         const liel = document.createElement('li');
                         liel.innerHTML = speciality.data;
-                        liel.id=speciality.id
+                        liel.id = speciality.id
                         ulel.appendChild(liel);
                     });
                     leftdata.appendChild(ulel);
@@ -622,61 +632,72 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            display(data.phonesec); 
-
-
-        const footer1= document.querySelector('.footer1')
-         data.footer.foot1.forEach(item=>{
-            const sec=document.createElement('div')
-            sec.className="footsec"
-
-             const head=document.createElement('div')
-             head.className="foothead"
-              head.innerHTML=item.name
-              sec.appendChild(head)
-
-            item.loop.forEach(foot=>{
-                const list=document.createElement('p')
-                list.innerHTML=foot
-                sec.appendChild(list)
-                // console.log(list)
-            })
-            footer1.appendChild(sec)
-                                                           
-         })
+            display(data.phonesec);
 
 
 
 
-         const bottom=document.querySelector('.bottom')
-         data.footer.bottom.forEach(item=>{
 
-            const botm=document.createElement('div')
-            botm.innerHTML=`${item}`
-            bottom.appendChild(botm)
-              
+
             
-        })
-         
-       
-     });
-       
-    
-});                                   
-   
-  
- 
 
- 
- 
 
- 
- 
+            const footer1 = document.querySelector('.footer1')
+            data.footer.foot1.forEach(item => {
+                const sec = document.createElement('div')
+                sec.className = "footsec"
 
- 
+                const head = document.createElement('div')
+                head.className = "foothead"
+                head.innerHTML = item.name
+                sec.appendChild(head)
 
- 
- 
+                item.loop.forEach(foot => {
+                    const list = document.createElement('p')
+                    list.innerHTML = foot
+                    sec.appendChild(list)
+                    // console.log(list)
+                })
+                footer1.appendChild(sec)
+
+            })
+
+
+
+
+            const bottom = document.querySelector('.bottom')
+            data.footer.bottom.forEach(item => {
+
+                const botm = document.createElement('div')
+                botm.innerHTML = `${item}`
+                bottom.appendChild(botm)
+
+
+            })
+
+
+
+
+
+
+        });
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -865,10 +886,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //         const select=new Set()
 
-        
+
 
 //         data.checkbox.forEach(item=>{
-            
+
 //             const box=document.createElement('input')
 //             const label=document.createElement('label')
 //             label.className='label'
@@ -876,11 +897,11 @@ document.addEventListener('DOMContentLoaded', () => {
 //             box.value=item.val
 //             box.id=item.id
 //             label.innerHTML=item.val
-    
+
 //             check.appendChild(box)
 //             check.appendChild(label)
 //             console.log(box.value)
-            
+
 
 
 //             box.addEventListener('change',(e)=>{
@@ -888,17 +909,17 @@ document.addEventListener('DOMContentLoaded', () => {
 //                 if (box.checked)
 //                     {
 //                         select.add(box.id)
-                       
+
 //                     }
 //                 else
 //                     {
 //                         select.delete(box.id)
 //                         console.log(select)
 //                     }
-            
+
 //                 checkboxfilter()         
 //             })
-                         
+
 //         })
 
 
@@ -911,12 +932,12 @@ document.addEventListener('DOMContentLoaded', () => {
 //             else{
 //                 console.log('yes')
 //                 console.log(select)
-                    
+
 //                   const filter=data.content.filter(item=>
 //                   select.has(item.id.toString())
-                                 
+
 //                   )
-             
+
 //             display(filter);
 
 //             }
@@ -924,10 +945,10 @@ document.addEventListener('DOMContentLoaded', () => {
 //         }
 
 //             const display = (product) => {
-             
+
 //                products.innerHTML = ''
 //                product.forEach(item => {
-           
+
 //                     const items = document.createElement('div')
 
 //                     items.className = 'productitems'
@@ -951,30 +972,23 @@ document.addEventListener('DOMContentLoaded', () => {
 //                     items.brand.toLowerCase().includes(value)
 //                 )
 //                 display(filter)
-                               
+
 //             })
 
 //             const rangeel=document.querySelector('.range')
 
 //             data.range.forEach(item =>{
-                
+
 //                 const input=document.createElement('input')
 //                 input.type='text'
 //                 input.placeholder='Enter price'
 //                 const label=document.createElement('label')
 //                 label.innerText=item.name
-              
+
 //                 rangeel.appendChild(label)
 //                 rangeel.appendChild(input)     
-            
+
 //             })
-            
+
 //        })
 // })
-      
-
-
-
-
-
-
