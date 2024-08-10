@@ -60,20 +60,22 @@
             "access": "Mobiles & Accessories",
             "mobile": "Mobiles",
             "price": "PRICE",
+
             "min": [
                 "Min",
                 10000,
                 15000,
-                2000,
+                20000,
                 30000
             ],
             "max": [
                 "₹30000+",
                 10000,
                 15000,
-                2000,
+                20000,
                 30000
             ],
+
             "brand": "BRAND",
             "bimg": "assets/icons/blacksearch.svg",
             "brandnames": [
@@ -86,157 +88,169 @@
                 "MOTOROLA"
             ],
             "more": "175 MORE",
-            "toparrow": "assets/icons/angle-up-solid.svg"
+            "toparrow": "assets/icons/angle-up-solid.svg",
+            "assure": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
         }
     ],
     "section": [
         {
             "name": "CUSTOMER RATING",
-            "mainid": "rating",
-            "common":"nothide",
+            "common": "nothide",
             "id": "rating",
-            "subid":"ratecheck",
+            "subid": "ratecheck",
             "checkdatas": [
                 "4<img src=\"assets/icons/whitestar.svg\"> & above",
                 "3<img src=\"assets/icons/whitestar.svg\"> & above"
             ]
         },
         {
+            "name": "GST INVOICE AVAILABLE",
+            "id": "gst",
+            "common": "hide",
+            "subid": "gstcheck",
+            "checkdatas": [
+                " GST Invoice Available"
+            ]
+        },
+        {
             "name": "RAM",
-            "id": "ram",
-            "common":"nothide",
-            "subid":"ramcheck",
+            "id": "rom",
+            "common": "nothide",
+            "subid": "ramcheck",
             "checkdatas": [
                 "3 GB",
                 "4 GB",
                 "5 GB ",
                 "1 GB and Below ",
                 "8 GB and Above",
-                "G","P","E","6 GB","A","B"
+                "G",
+                "P",
+                "E",
+                "6 GB",
+                "A",
+                "B"
             ]
         },
         {
             "name": "INITIAL STORAGE",
             "id": "storage",
-            "common":"hide",
-            "subid":"storagecheck",
+            "common": "hide",
+            "subid": "storagecheck",
             "checkdatas": [
-               " 256 GB & Above",
+                " 256 GB & Above",
                 "128 - 255.9 GB",
-              "  64 - 127.9 GB",
-              "  32 - 63.9 GB",
+                "  64 - 127.9 GB",
+                "  32 - 63.9 GB",
                 "16 - 31.9 GB",
-               " 8 - 15.9 GB"
+                " 8 - 15.9 GB"
             ]
         },
         {
             "name": "BATTERY CAPACITY",
             "id": "battery",
-            "common":"hide",
-            "subid":"batterycheck",
+            "common": "hide",
+            "subid": "batterycheck",
             "checkdatas": [
-              "  1000 - 1999 mAh",
-               " 2000 - 2999 mAh",
+                "  1000 - 1999 mAh",
+                " 2000 - 2999 mAh",
                 "3000 - 3999 mAh",
                 "4000 - 4999 mAh",
                 "5000 - 5999 mAh",
-               " 5000 mAh Above",
-               " 6000 mAh & Above",
+                " 5000 mAh Above",
+                " 6000 mAh & Above",
                 "A",
-               " B",
+                " B",
                 "E",
-               " G",
-               " Less than 1000 mAh",
-               " P"
+                " G",
+                " Less than 1000 mAh",
+                " P"
             ]
         },
         {
             "name": "SCREEN SIZE",
             "id": "screen",
-            "common":"hide",
-            "subid":"screencheck",
+            "common": "hide",
+            "subid": "screencheck",
             "checkdatas": [
-               " 5.7 - 5.9 inch",
-             "   5.5 - 5.6 inch",
-               " 5.2 - 5.4 inch",
+                " 5.7 - 5.9 inch",
+                "   5.5 - 5.6 inch",
+                " 5.2 - 5.4 inch",
                 "5 - 5.1 inch",
-               " 4.5 - 4.9 inch",
+                " 4.5 - 4.9 inch",
                 "4 - 4.4 inch",
-               " 3.5 - 3.9 inch",
-               " 3 - 3.4 inch",
+                " 3.5 - 3.9 inch",
+                " 3 - 3.4 inch",
                 "Less than 3 inch",
                 "6.4 inch & Above",
-               " 6 - 6.3 inch",
-               " 6 inch above"
-               
-                
+                " 6 - 6.3 inch",
+                " 6 inch above"
             ]
         },
         {
             "name": "PRIMARY CAMARA",
             "id": "camara",
-            "common":"hide",
-            "subid":"camaracheck",
+            "common": "hide",
+            "subid": "camaracheck",
             "checkdatas": [
-               " 5 - 7.9 MP",
-              "  Below 5 MP",
-               " 8 - 11.9 MP",
-              "  12 - 12.9 MP",
+                " 5 - 7.9 MP",
+                "  Below 5 MP",
+                " 8 - 11.9 MP",
+                "  12 - 12.9 MP",
                 "12 - 15.9 MP",
                 "13 - 15.9 MP",
-               " 16 - 20.9 MP",
-               " 21 - 31.9 MP",
-               " 21 MP Above",
-               " 32 - 47.9 MP",
+                " 16 - 20.9 MP",
+                " 21 - 31.9 MP",
+                " 21 MP Above",
+                " 32 - 47.9 MP",
                 "48 - 63.9 MP"
             ]
         },
         {
             "name": "SECONDARY CAMARA",
             "id": "scam",
-            "common":"hide",
-            "subid":"scamcheck",
+            "common": "hide",
+            "subid": "scamcheck",
             "checkdatas": [
                 "12 - 12.9 MP",
-               " 12 - 15.9 MP",
-               " 13 - 15.9 MP",
+                " 12 - 15.9 MP",
+                " 13 - 15.9 MP",
                 "16 - 20.9 MP",
                 "21 MP Above",
                 "21 MP & Above",
-               " 5 - 7.9 MP",
-               " 8 - 11.9 MP",
+                " 5 - 7.9 MP",
+                " 8 - 11.9 MP",
                 "Below 5 MP"
             ]
         },
         {
             "name": "PROCESSOR BAND",
             "id": "processor",
-            "common":"hide",
-            "subid":"processorcheck",
+            "common": "hide",
+            "subid": "processorcheck",
             "checkdatas": [
-               " AMD",
+                " AMD",
                 "Apple",
-               " ARM",
-               " Exynos",
+                " ARM",
+                " Exynos",
                 "Google",
-               " HiSilicon",
-              "  Huawei",
+                " HiSilicon",
+                "  Huawei",
                 "Intel",
                 "Mediatek",
-              "  NVIDIA",
+                "  NVIDIA",
                 "Qualcomm",
                 "Snapdragon",
-               " Spreadtrum",
-               " Unisoc"
+                " Spreadtrum",
+                " Unisoc"
             ]
         },
         {
             "name": "SPECCIALITY",
             "id": "speciality",
-            "common":"hide",
-            "subid":"specialcheck",
+            "common": "hide",
+            "subid": "specialcheck",
             "checkdatas": [
-               " Big Storage",
+                " Big Storage",
                 "Higher Performance",
                 "Long-Lasting Battery",
                 "Selfie Camera"
@@ -289,13 +303,29 @@
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
             "speciality": [
-                "128 GB ROM",
-                "15.49 cm (6.1 inch) Super Retina XDR Display",
-                "48MP + 12MP | 12MP Front Camara",
-                "A16 Bionic Chip, 6 Core Processor Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "48MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A16 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "65,499",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "17% off",
@@ -311,13 +341,29 @@
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "44,931 Ratings & 2,408 Reviews",
             "speciality": [
-                "256 GB ROM",
-                "15.49 cm (6.1 inch) Super Retina XDR Display",
-                "48MP + 12MP | 12MP Front Camara",
-                "A16 Bionic Chip, 6 Core Processor Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "256 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "48MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A16 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "81,999",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹89,600",
             "off": "8% off",
@@ -333,13 +379,29 @@
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "77,251 Ratings & 4,327 Reviews",
             "speciality": [
-                "128 GB ROM",
-                "17.02 cm (6.7 inch) Super Retina XDR Display",
-                "12MP + 12MP | 12MP Front Camara",
-                "A15 Bionic Chip, 6 Core Processor Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.02 cm (6.7 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "12MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A15 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "56,999",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "28% off",
@@ -355,13 +417,29 @@
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "33,979 Ratings & 1,900 Reviews",
             "speciality": [
-                "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
-                "17.12 cm (6.74 inch)HD+ Display",
-                "50MP Rear Camara | 8MP Front Camara",
-                "Helio G85 Processor",
-                "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.12 cm (6.74 inch)HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP Rear Camara | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "Helio G85 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "7,699",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹11,999",
             "off": "35% off",
@@ -377,13 +455,29 @@
             "data": "4.2<img src=\"assets/icons/whitestar.svg\">",
             "review": "21,694 Ratings & 1,182 Reviews",
             "speciality": [
-                "8 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
-                "16.51 cm (6.5 inch) Full HD+ Display",
-                "50MP (OIS) + 8MP | 16MP Front Camara",
-                "Dimensity Processor",
-                "1 Year Manufacturing Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "8 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.51 cm (6.5 inch) Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP (OIS) + 8MP | 16MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "Dimensity Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "13,999",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹17,999",
             "off": "22% off",
@@ -399,13 +493,29 @@
             "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
             "speciality": [
-                "128 GB ROM",
-                "15.49 cm (6.1 inch) Super Retina XDR Display",
-                "48MP + 12MP | 12MP Front Camara",
-                "A16 Bionic Chip, 6 Core Processor Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "48MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A16 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "65,499",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹79,600",
             "off": "17% off",
@@ -421,13 +531,29 @@
             "data": "4.3<img src=\"assets/icons/whitestar.svg\">",
             "review": "45,052 Ratings & 2,414 Reviews",
             "speciality": [
-                "4 GB ROM",
-                "16.66 cm (6.56 inch) Super Retina XDR Display",
-                "13MP + 2MP | 8MP Front Camara",
-                "5000 mAh Battery",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "4 GB RAM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.66 cm (6.56 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "13MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "13,999",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹17,999",
             "off": "22% off",
@@ -443,14 +569,33 @@
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "8,886 Ratings & 2,414 Reviews",
             "speciality": [
-                "4 GB ROM | 128 ROM",
-                "16.66 cm (6.56 inch) Super Retina XDR Display",
-                "50MP + 2MP | 12MP Front Camara",
-                "5000 mAh Battery",
-                "Dimensity 6300 Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "4 GB RAM | 128 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.66 cm (6.56 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 2MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Dimensity 6300 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "10,499",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹14,600",
             "off": "27% off",
@@ -466,14 +611,33 @@
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "1,48,886 Ratings & 13,414 Reviews",
             "speciality": [
-                "8 GB RAM | 256 ROM",
-                "16.26 cm (6.4 inch)Full HD+ Display",
-                "12MP + 12MP | 32MP Front Camara",
-                "4500 mAh Battery",
-                "Snapdragon 888 Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "8 GB RAM | 256 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.26 cm (6.4 inch)Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "12MP + 12MP | 32MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "4500 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Snapdragon 888 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "30,000",
+            "asure":"asure",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
             "strike": "₹74,600",
             "off": "59% off",
@@ -489,12 +653,30 @@
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "48,886 Ratings & 714 Reviews",
             "speciality": [
-                "12 GB RAM | 256 ROM",
-                "16.94 cm (6.67 inch)Full HD+ Display",
-                "64MP + 8MP + 12MP | 16MP Front Camara",
-                "5000 mAh Battery",
-                "Snapdragon 7+Gen 2 Processor",
-                "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories"
+                {
+                    "data": "12 GB RAM | 256 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.94 cm (6.67 inch)Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "64MP + 8MP + 12MP | 16MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Snapdragon 7+Gen 2 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
             ],
             "price": "33,999",
             "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
@@ -504,5 +686,107 @@
             "save": "Daily Saver",
             "exchange": "Upto <span>₹20,950</span> Off on Exchange"
         }
-    ]
+    ],
+    "footer": 
+        {
+            "foot1": [
+                {
+                    "name": "ABOUT",
+                    "loop":[
+                        "Contact Us",
+                        "About Us",
+                        "Careers",
+                        "Flipkart Stories",
+                        "Press",
+                        "Corporate Information"
+                    ]
+                },
+                {
+                    "name": "GROUP COMPANIES",
+                    "loop":[
+                        "Myntra",
+                        "Cleartrip",
+                        "Shopsy"
+                    ]
+                },
+                {
+                    "name": "HELP",
+                    "loop":[
+                        "Payments",
+                        "Shipping",
+                        "Cancellation & Returns",
+                        "FAQ",
+                        "Report Infrigement"
+                    ]
+                },
+                {
+                    "name": "CONSUMER POLICY",
+                    "loop": [
+                       
+                        " Cancellation & Returns",
+                        "  Terms Of Use",
+                        "  Security",
+                        " Privacy",
+                        " Sitemap",
+                        " Grievance Redressal",
+                        "EPR Compliance"
+                    ]
+                },
+               {
+                    "name":"Mail Us:",
+                    "loop":[
+
+                   " Flipkart Internet Private Limited,",
+                    
+                    "Buildings Alyssa, Begonia &",
+                    
+                   " Clove Embassy Tech Village,",
+                    
+                   " Outer Ring Road, Devarabeesanahalli Village,",
+                    
+                  "  Bengaluru, 560103,",
+                    
+                 "   Karnataka, India"
+                    ]
+                
+                },
+               
+                
+                {
+                    "name":"Registered Office Address:",
+                    "loop":[
+
+                    "Flipkart Internet Private Limited,",
+                    
+                   " Buildings Alyssa, Begonia &",
+                    
+                   " Clove Embassy Tech Village,",
+                    
+                   " Outer Ring Road, Devarabeesanahalli Village,",
+                    
+                   " Bengaluru, 560103,",
+                    
+                    "Karnataka, India",
+                    
+                   " CIN : U51109KA2012PTC066107",
+                    
+                   " Telephone: 044-45614700 / 044-67415800"
+                    ]
+                    
+                }
+            ],
+            
+                "social":"Mail Us:",
+                "loop":["/assets/icons/f.svg","/assets/icons/x.svg","/assets/icons/youtube.svg"],
+        
+            "bottom": [
+                "<img src=\" /assets/icons/bag.svg\"><span>Become a Seller<span>",
+                "<img src=\" /assets/icons/star.svg\"><span>Advertise</span>",
+                "<img src=\" /assets/icons/gift.svg\"><span>Gift Cards</span>",
+                "<img src=\" /assets/icons/question.svg\"><span>Help Center</span>",
+                "@ 2007-2024<span>Flipkart.com</span>",
+                "<img src=\"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg\">"
+            ]
+        }
+    
 }
