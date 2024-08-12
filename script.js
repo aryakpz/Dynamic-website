@@ -631,8 +631,54 @@ document.addEventListener('DOMContentLoaded', () => {
                     mainsec.appendChild(mainph);
                 });
             }
-
+        
             display(data.phonesec);
+ 
+
+            const page=document.querySelector('.next span')
+            page.innerHTML=data.next.page
+
+           
+            const pagecount=document.querySelector('.next .pages')
+
+            data.next.number.forEach(list=>{
+                const count=document.createElement('div')
+                count.className='count'
+
+                count.innerHTML=`<a href="${list.url}">${list.value}</a>`
+                pagecount.appendChild(count)
+            }
+
+            )
+             
+
+            
+           const looks=document.querySelector('.sublook')
+           const find=document.createElement('div')
+           find.className='find'
+           find.innerHTML=data.next.looking
+           looks.appendChild(find)
+
+
+
+           const yes=document.createElement('button')
+           yes.className='yesbtn'
+           yes.innerHTML=data.next.yes
+
+
+           looks.appendChild(yes)
+    
+           const no=document.createElement('button')
+           no.className='nobtn'
+           no.innerHTML=data.next.no   
+           looks.appendChild(no)
+    
+
+    
+           
+           
+
+
 
 
 
@@ -684,13 +730,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
-
-
-
-
-
-
 
 
 

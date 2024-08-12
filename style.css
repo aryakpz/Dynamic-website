@@ -63,7 +63,7 @@
                 margin-top: 2px;
                 font-size: 15.4px;
                 font-family: "semibold";
-               
+
             }
 
 
@@ -136,26 +136,29 @@
                 margin-top: 2px;
                 width: 19.5px;
             }
-           
+
             .seller,
             .more,
             .cart {
                 margin: 0 20px;
                 padding-top: 8px;
+                min-width: max-content;
             }
-            .seller{
+
+            .seller {
                 padding-left: 21px;
                 font-family: "semibold";
                 font-size: 15.5px;
                 letter-spacing: -0.06px;
             }
-            .more{
+
+            .more {
                 letter-spacing: -.4px;
                 padding-top: 7px;
                 font-weight: 400;
                 font-family: "semibold";
                 font-size: 16px;
-            }     
+            }
 
             .more img {
                 width: 8px;
@@ -163,27 +166,30 @@
                 margin-left: 2.5px;
                 /* margin-top: 1px; */
                 margin-bottom: 1px;
-            }  
-            
-            .cart {
-               padding-left: 6px;
-               padding-top: 8px;
-               font-size: 15.5px;
-               display: flex;
-               gap: 8px;
             }
-            .cart img{
+
+            .cart {
+                padding-left: 6px;
+                padding-top: 8px;
+                font-size: 15.5px;
+                display: flex;
+                gap: 8px;
+            }
+
+            .cart img {
                 width: 16px;
                 height: 16px;
                 /* margin-bottom:px; */
-                margin-top: 1px; 
-              
-               
+                margin-top: 1px;
+
             }
+
             .dropmenu {
                 margin-top: 56px;
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
                 min-height: 40px;
+                display: flex;
+                gap: 10px;
                 background-color: white;
             }
 
@@ -205,6 +211,7 @@
                 /* font-weight: 700; */
                 font-family: "semibold";
                 font-size: 13px;
+                min-width: max-content;
                 letter-spacing: .16px;
                 line-height: 1.4;
                 height: 100%;
@@ -739,12 +746,13 @@
                 font-size: 13px;
                 letter-spacing: 0.15px;
             }
-                              
-            .heart{ 
+
+            .heart {
                 top: 1px;
                 position: absolute;
                 right: -8px;
             }
+
             .heart img {
                 cursor: pointer;
                 width: px;
@@ -884,6 +892,102 @@
             .datasec .rightpart .exchange span {
                 font-weight: 500;
                 font-family: "semibold";
+            }
+
+
+
+            .next {
+                box-sizing: border-box;
+                width: 100%;
+
+            }
+
+            .subnext {
+                /* border-top: ; */
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                line-height: 32px;
+                font-family: "regular";
+                font-size: 14px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .subnext span {
+                /* m */
+            }
+
+            .pages {
+                display: flex;
+                padding: 4px 0;
+                font-weight: 600;
+            }
+                                          
+            .pages .count {
+                padding: 0 8px;
+                width: 18px;
+                height: 32px;
+                border-radius: 50%;
+                /* background-color:#2874f0; */
+                align-items: center;
+                text-align: center;
+                aspect-ratio: 1/1;
+
+                text-decoration: none;
+
+            }
+
+            .pages .count:first-child {
+                background-color: #2874f0;
+            }
+
+
+            .pages .count:first-child a {
+                color: rgb(243, 242, 242);
+               
+            }
+
+            .pages .count a{
+                color: #080808;
+                font-weight: 500;
+                font-size: 13.3px;
+                text-decoration: none;
+                font-family: "semibold";
+            }
+            
+            .pages .count:last-child a{
+                color: #2874f0;
+                padding-left: 5px;
+            }
+            .looking{
+                margin-top: 10px ;
+                background-color: #f1f3f6;
+               
+            }
+
+            .sublook{
+                font-size: 16px;
+                font-family: "semibold";
+                font-weight: 500;
+                display: flex;
+                margin-top: 10px;
+                background-color: white;
+                 /* padding-left: 10px; */
+                 padding: 16px;
+                 align-items: center;
+             
+
+            } 
+            .sublook  button{
+                background-color:white ;
+                border: 1px solid rgb(216, 210, 210);
+              margin-left: 25px;
+              margin-right: -15px;
+              /* padding: ; */
+              border-radius: 2px;
+              padding: 6px 28px;
+              font-weight: 500;
             }
 
             footer {
