@@ -1,0 +1,179 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main {
+    /* border: 1px solid black; */
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12), 0px 5px 5px -3px rgba(0, 0, 0, .2);
+    max-width: 580px;
+    width: 100%;
+    height: 100%;
+    min-height: 630px;
+    display: flex;
+    flex-flow: column;
+    /* border-radius: 8px; */
+}
+
+
+.top {
+    /* height: 40px; */
+    align-items: center;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 235, 235)
+}
+
+.top div button {
+    border: none;
+    /* background-color:bisque; */
+}
+
+.to {
+    align-items: center;
+    width: 97%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 228, 228);
+
+}
+
+input {
+    border: none;
+}
+.to a{
+    text-decoration: none;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+.subject {
+    align-items: center;
+    width: 97%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 228, 228);
+
+}
+
+.footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .foot {
+    display: flex;
+
+}
+
+.body textarea {
+    min-height: 450px;
+    height: 100%;
+    border: none;
+    max-width: 580px;
+    width: 97%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.body textarea:focus {
+    outline: none;
+}
+
+.footer .send button {
+    background-color: #0b57d0;
+    border: none;
+    border-radius: 13px;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-right: 12px;
+}
+
+
+
+.footer button {
+    background-color: white;
+    padding: 2px;
+    border: none;
+
+}
+
+.footer button:hover{
+    background-color: rgb(207, 203, 203);
+}
+
+.delete button {
+    justify-content: flex-end;
+    display: flex;
+    float: right;
+}
+
+
+
+.keypad{
+    max-width: fit-content;
+    width: 100%;
+    min-width: 2px;
+    height: fit-content;
+    box-sizing: border-box;
+    padding:  20px 10px;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12), 0px 5px 5px -3px rgba(0, 0, 0, .2);
+    background-color: rgb(236, 236, 236);
+}
+
+.keys{
+    display: flex;
+    max-width: fit-content;
+    width: 100%;
+    flex-flow: column;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    min-width: 2px;
+    gap:10px;
+    box-sizing: border-box;
+}
+.keys div{
+    display: flex;
+    gap: 10px;
+}
+
+.letter{
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    /* margin-right: 10px; */
+}
+
+
+
+.click{
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}

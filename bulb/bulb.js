@@ -17,7 +17,7 @@ startel.addEventListener('click', () => {
 
     display.innerHTML = ''; 
     rowel.innerHTML='';
-    timeel.innerHTML='';
+    timeel.innerHTML=''; 
 
     
     for (let i = 1; i <= row; i++) {
@@ -42,7 +42,7 @@ startel.addEventListener('click', () => {
         rows.forEach(item => {
             item.querySelectorAll('.circle').forEach(circle => {
                 circle.style.backgroundColor = 'white';
-               
+                     
             });
         });
         rows[count].querySelectorAll('.circle').forEach(circle => {
@@ -51,7 +51,11 @@ startel.addEventListener('click', () => {
      
         });
 
-        count= (count + 1)  % rows.length
+        count= (count + 1) 
+        if(count == rows.length)
+            {
+                count=0;
+            }
     
     }, delay);
 
