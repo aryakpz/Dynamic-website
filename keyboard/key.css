@@ -51,7 +51,8 @@ body {
 input {
     border: none;
 }
-.to a{
+
+.to a {
     text-decoration: none;
     color: black;
 }
@@ -120,7 +121,7 @@ input:focus {
 
 }
 
-.footer button:hover{
+.footer button:hover {
     background-color: rgb(207, 203, 203);
 }
 
@@ -132,18 +133,18 @@ input:focus {
 
 
 
-.keypad{
+.keypad {
     max-width: fit-content;
     width: 100%;
     min-width: 2px;
     height: fit-content;
     box-sizing: border-box;
-    padding:  20px 10px;
+    padding: 20px 10px;
     box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12), 0px 5px 5px -3px rgba(0, 0, 0, .2);
-    background-color: rgb(236, 236, 236);
+    background-image: linear-gradient(90deg,#66154e,#0000);
 }
 
-.keys{
+.keys {
     display: flex;
     max-width: fit-content;
     width: 100%;
@@ -151,29 +152,85 @@ input:focus {
     overflow-wrap: break-word;
     flex-wrap: wrap;
     min-width: 2px;
-    gap:10px;
+    gap: 10px;
     box-sizing: border-box;
 }
-.keys div{
+
+.keys div {
     display: flex;
     gap: 10px;
 }
 
-.letter{
-    background-color: white;
+.letter {
+    background-color:white;
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-    
-    /* margin-right: 10px; */
+    font-size: 600;
+
 }
 
 
 
-.click{
+.click {
     height: fit-content;
     font-size: 20px;
     font-weight: 600;
     padding: 20px;
+    border: 3px solid rgb(111, 115, 170);
+    background-color: #628bcc;
+}
+
+.click:hover{
+    border: 3px solid rgb(81, 81, 190);
+    color: white;
+    background-color: #092a5f;
+}
+.extra{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.maininfo{
+    display: flex;
+    flex-flow: column;
+    max-width: 430px;
+    width: 100%;
+    vertical-align: top;
+}
+.info{
+    margin-top: 30px;
+    color: #092a5f;
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-end;
+   
+    
+    width: 100%;
+    
+}
+.info img{
+    width: 15px;
+    margin-left: 5px;
+}
+.info:hover{
+    color: green;
+    text-decoration: underline;
+ 
+}
+
+.sub{
+    display: none;
+    background-color: rgb(222, 216, 224);
+    padding: 10px;
+
+}
+.sub ul{
+    list-style-type: num;
+    
+    
 }

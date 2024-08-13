@@ -1,155 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>keyboard</title>
-    <link rel="stylesheet" href="key.css">
-</head>
-<body>
-    <div  class="main">
-    <div class="top"><div>New Message</div>
-    <div>
-      <button><img src="icon/min.png" alt=""></button>
-      <button><img src="icon/ar.png" alt=""></button>
-      <button><img src="icon/x.png" alt=""></button>
-    </div>
-   </div>
-    <div class="to">
-        <span> To<input type="text"></span>
-        <Span> <a href ="">Cc</a> <a href ="">Bcc</a></Span>
-        
-    </div>
-
-    <div class="subject"> <input type="text" placeholder=" Subject"></div>
-    <div class="body">
-
-    <textarea name="body" id="content"></textarea>
-    
-    </div>
-
-    <div class="footer">
-        <div class="foot">
-            <div class="send">
-                <button id="send">Send</button>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>keyboard</title>
+        <link rel="stylesheet" href="key.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="top"><div>New Message</div>
+                <div>
+                    <button><img src="icon/min.png" alt></button>
+                    <button><img src="icon/ar.png" alt></button>
+                    <button><img src="icon/x.png" alt></button>
+                </div>
+            </div>
+            <div class="to">
+                <span> To<input type="text"></span>
+                <span> <a href>Cc</a> <a href>Bcc</a></span>
 
             </div>
 
-            <div class="icons">
-                <button>  <img src="icon/a.png" alt=""> </button>
-                <button><img src="icon/u.png" alt=""> </button>
-                <button><img src="icon/link.png" alt=""> </button>
-                <button><img src="icon/emoji.png" alt=""> </button>
-                <button><img src="icon/drive.png" alt=""> </button>
-                <button><img src="icon/photo.png" alt=""> </button>
-                <button><img src="icon/lock.png" alt=""> </button>
-                <button><img src="icon/pen.png" alt=""> </button>
-                <button><img src="icon/menu.png" alt=""> </button>
+            <div class="subject"> <input type="text"
+                    placeholder=" Subject"></div>
+            <div class="body">
+
+                <textarea name="body" id="content"></textarea>
+
+            </div>
+
+            <div class="footer">
+                <div class="foot">
+                    <div class="send">
+                        <button id="send">Send</button>
+
+                    </div>
+
+                    <div class="icons">
+                        <button><img src="icon/a.png" alt> </button>
+                        <button><img src="icon/u.png" alt> </button>
+                        <button><img src="icon/link.png" alt> </button>
+                        <button><img src="icon/emoji.png" alt> </button>
+                        <button><img src="icon/drive.png" alt> </button>
+                        <button><img src="icon/photo.png" alt> </button>
+                        <button><img src="icon/lock.png" alt> </button>
+                        <button><img src="icon/pen.png" alt> </button>
+                        <button><img src="icon/menu.png" alt> </button>
+                    </div>
+                </div>
+
+                <div class="delete">
+                    <button><img src="icon/delete.png" alt> </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <div class="keypad">
+                <div class="keys">
+                    <!-- <button class="let" value="w">w</button> -->
+
+                    <!-- <button class="let" value="Q">Q</button> -->
+                    <div>
+                        <div class="letter">~</div>
+                        <div class="letter">1</div>
+                        <div class="letter">2</div>
+                        <div class="letter">3</div>
+                        <div class="letter">4</div>
+                        <div class="letter">5</div>
+                        <div class="letter">6</div>
+                        <div class="letter">7</div>
+                        <div class="letter">8</div>
+                        <div class="letter">9</div>
+                        <div class="letter">0</div>
+                        <div class="letter">-</div>
+                        <div class="letter">+</div>
+                        <div id="back" class="letter">Backspace </div>
+                    </div>
+                    <div>
+
+                        <div class="letter" style="width: 82px;">Tab</div>
+
+                        <div class="letter">Q</div>
+                        <div class="letter">W</div>
+                        <div class="letter">E</div>
+                        <div class="letter">R</div>
+                        <div class="letter">T</div>
+                        <div class="letter">Y</div>
+                        <div class="letter">U</div>
+                        <div class="letter">I</div>
+                        <div class="letter">O</div>
+                        <div class="letter">P</div>
+                        <div class="letter">{</div>
+                        <div class="letter">}</div>
+                        <div class="letter">\</div>
+                    </div>
+                    <div>
+                        <div class="letter" style="width: 95px;">CapsLk</div>
+
+                        <div class="letter">A</div>
+                        <div class="letter">S</div>
+                        <div class="letter">D</div>
+                        <div class="letter">F</div>
+                        <div class="letter">G</div>
+                        <div class="letter">H</div>
+                        <div class="letter">J</div>
+                        <div class="letter">K</div>
+                        <div class="letter">L</div>
+                        <div class="letter">;</div>
+                        <div class="letter">"</div>
+                        <div class="letter" style="width:80px;">Enter</div>
+                    </div>
+                    <div>
+                        <div class="letter" style="width:120px;">Shift</div>
+                        <div class="letter">Z</div>
+                        <div class="letter">X</div>
+                        <div class="letter">C</div>
+                        <div class="letter">V</div>
+                        <div class="letter">B</div>
+                        <div class="letter">N</div>
+                        <div class="letter">M</div>
+                        <div class="letter">,</div>
+                        <div class="letter">.</div>
+                        <div class="letter">/</div>
+                        <div class="letter" style="width:120px;">Shift</div>
+                    </div>
+                    <div>
+                        <div class="letter">Cntrl</div>
+                        <div class="letter">Fn</div>
+                        <div class="letter">alt</div>
+                        <div id='space' class="letter"
+                            style="width: 306px; color: transparent;">space</div>
+                        <div class="letter">AltGr</div>
+                        <div class="letter">Cntrl</div>
+                        <div class="letter"><-</div>
+                        <div class="letter">-></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="extra">
+                <div>
+                    <button class="click">CONTROL</button>
+                </div>
+
+                <div class="maininfo">
+
+                    <div class="info">
+                        Instructions<img src="icon/angle-down-solid.svg">
+                    </div>
+
+                    <div class="sub">
+                        <ul>
+                            <li>Mouse over moves the keys from left to
+                                right</li>
+                            <li>Single click select the key</li>
+                            <li>Mouse leave will stop the iteration</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-            <div class="delete">
-                <button><img src="icon/delete.png" alt=""> </button>
-            </div>
-        
     </div>
+            
 
-   </div> 
+<script src="key.js"></script>
 
-
-
-   <div class="keypad">
-   <div class="keys">
-    <!-- <button class="let" value="w">w</button> -->
-   
-   
-    <!-- <button class="let" value="Q">Q</button> -->
-   <div> <div class="letter">~</div>
-    <div class="letter" id="jnjf">1</div>
-    <div class="letter">2</div>
-    <div class="letter">3</div>
-    <div class="letter">4</div>
-    <div class="letter">5</div>
-    <div class="letter">6</div>
-    <div class="letter">7</div>
-    <div class="letter">8</div>
-    <div class="letter">9</div>
-    <div class="letter">0</div>
-    <div class="letter">-</div>
-    <div class="letter">+</div>
-    <div  id="back" class="letter">Backspace </div>
-    </div>
-    <div>
-
-    <div class="letter" style="width: 82px;">  Tab</div>
-    
-    <div class="letter">Q</div>
-    <div class="letter">W</div>
-    <div class="letter">E</div>
-    <div class="letter">R</div>
-    <div class="letter">T</div>
-    <div class="letter">Y</div>
-    <div class="letter">U</div>
-    <div class="letter">I</div>
-    <div class="letter">O</div>
-    <div class="letter">P</div>
-
-    <div class="letter">{</div>
-    <div class="letter">}</div>
-    <div class="letter">\</div>
- </div>
- <div>
-    <div class="letter" style="width: 95px;">CapsLk</div>
-    
-
-    <div class="letter">A</div>
-    <div class="letter">S</div>
-    <div class="letter">D</div>
-    <div class="letter">F</div>
-    <div class="letter">G</div>
-    <div class="letter">H</div>
-    <div class="letter">J</div>
-    <div class="letter">K</div>
-    <div class="letter">L</div>
-    <div class="letter">;</div>
-    <div class="letter">"</div>
-    <div class="letter" style="width:80px;">Enter</div>
-</div>
-<div>
-    <div class="letter" style="width:120px;">Shift</div>
-    <div class="letter">Z</div>
-    <div class="letter">X</div>
-    <div class="letter">C</div>
-    <div class="letter">V</div>
-    <div class="letter">B</div>
-    <div class="letter">N</div>
-    <div class="letter">M</div>
-    <div class="letter">,</div>
-    <div class="letter">.</div>
-    <div class="letter">/</div>
-    <div class="letter" style="width:120px;">Shift</div>
-    </div>
-    <div>
-    <div class="letter">Cntrl</div>
-    <div class="letter">Fn</div>
-    <div class="letter">alt</div>
-    <div  id ='space' class="letter" style="width: 306px;"></div>
-    <div class="letter">AltGr</div>
-    <div class="letter">Cntrl</div>
-    <div class="letter"><-</div>
-    <div class="letter">-></div>
-    </div>
-    
-   </div >
-  
-
-   </div>
-   <button class="click">Click</button>
-
-
-
-    <script src="key.js"></script>
-    
 </body>
-</html>                        
+</html>
