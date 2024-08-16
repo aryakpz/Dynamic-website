@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
                 const dropdown = document.querySelector('.dropmenu .subnav');
                 data.drop.forEach(item => {
                     const list = document.createElement('span');
@@ -133,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const minmax = document.querySelector('.minmax')
                 const min = document.querySelector('.min')
                 const select1 = document.createElement('select')
+
+                select1.id = 'min-select'
                 item.min.forEach(minvalues => {
                     const values = document.createElement('option')
                     values.innerHTML = minvalues
@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const max = document.querySelector('.max')
 
                 const select2 = document.createElement('select')
+                select2.id = 'max-select'
                 item.max.forEach(minvalues => {
                     const values = document.createElement('option')
                     values.innerHTML = minvalues
@@ -169,11 +170,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 price.appendChild(minmax)
 
 
-                //  brand
+
+
+                const maxp = document.getElementById('max-select')
+
+                const minp = document.getElementById('min-select')
+
+
+
+                maxp.addEventListener('change', update)
+                minp.addEventListener('change', update)
+
+
+
+                function update() {
+
+                    const max = maxp.options[maxp.selectedIndex].value
+                    console.log(max)
+
+                    const min = minp.options[minp.selectedIndex].value
+                    console.log(min)
+
+
+                    const filter = data.phonesec.filter(item => item.price >= min && item.price <= max);
+
+                    display(filter)
+
+                }
+
+
+
+
+
+
+
+                //==== brands
                 const brand = document.querySelector('.left-brand');
                 const bhead = document.createElement('div');
                 bhead.className = 'bhead';
-                bhead.innerHTML = `<span>${item.brand}</span> <img src="assets/icons/angle-up-solid.svg">`;
+                bhead.innerHTML = `<span>${item.brand}</span><img src="assets/icons/angle-up-solid.svg">`;
                 brand.appendChild(bhead);
 
                 const bsearch = document.createElement('div');
@@ -184,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 brand.appendChild(bsearch);
 
 
-                //   brandevent
+                // ====  brandevent
 
                 bhead.addEventListener('click', () => {
 
@@ -199,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const bmaincheck = document.createElement('div');
                 bmaincheck.className = 'bmaincheck';
 
-                //bramd check filter
+                //====   bramd check filter
 
                 function brandfilter(names) {
                     bmaincheck.innerHTML = '';
@@ -217,17 +252,17 @@ document.addEventListener('DOMContentLoaded', () => {
                         bmaincheck.appendChild(bcheck);
 
 
-    
+
                         // ============ Checkbox filter ==============// 
 
 
                         check.addEventListener('change', (e) => {
                             if (check.checked) {
                                 list.push(check.value.toLowerCase())
-                                console.log(list)
+                                // console.log(list)
                             } else {
                                 list.pop()
-                                console.log(list)
+                                // console.log(list)
                             }
 
                             checkbox()
@@ -236,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                     });
-                      brand.appendChild(bmaincheck)
+                    brand.appendChild(bmaincheck)
 
                     const p = document.createElement('p')
                     p.className = 'more'
@@ -257,41 +292,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 asurecheck.addEventListener('change', (e) => {
 
                     if (asurecheck.checked) {
-                        search.push(asurecheck.value)  
-        
-                    } 
+                        search.push(asurecheck.value)
+
+                    }
                     else {
                         search.pop()
-                        console.log("no")
+                        // console.log("no")
                     }
                     asurefunction()
                 })
 
 
-                // function asurefunction() {
-                //    
-                //         console.log("noo")
-                //     } else {
-                //         console.log('te')
-                //     }
-                // }
 
-                function asurefunction()  {
+
+                function asurefunction() {
 
                     if (select.length == 0) {
-    
-                        display(data.phonesec)  
-                        console.log(search)   
+
+                        display(data.phonesec)
+                        // console.log(search)
                     } else {
-                        console.log(search)  
+                        // console.log(search)
                         const filter = data.phonesec.filter(item =>
                             select.includes(item.asure))
-                          
-    
+
+
                         display(filter);
                     }
-    
-    
+
+
                 }
 
 
@@ -312,16 +341,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             })
 
-               
+
             const imgel = document.querySelector('.bhead img')
 
             function checkbox() {
 
                 if (list.length == 0) {
 
-                    display(data.phonesec)     
+                    display(data.phonesec)
                 } else {
-           
+
                     const filter = data.phonesec.filter(item =>
                         list.includes(item.id.toLowerCase()))
 
@@ -363,10 +392,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (bmainrate.style.display === 'none') {
                         bmainrate.style.display = 'block';
-                        console.log(bmainrate.style.display);
+                        // console.log(bmainrate.style.display);
                     } else {
                         bmainrate.style.display = 'none';
-                        console.log(bmainrate.style.display);
+                        // console.log(bmainrate.style.display);
                     }
                 });
 
@@ -388,64 +417,34 @@ document.addEventListener('DOMContentLoaded', () => {
                     bcheck.appendChild(label);
 
                     check.addEventListener('change', (e) => {
-                        if (check.checked) {
-                            select.push(check.value)
-                             arr.push(bmainrate.id)
-                            // console.log(arr)
-                        } else {
-                            select.pop()
-                            arr.pop()
+                        if (bmainrate.id == 'ramcheck') {
+                            ramfilter(check)
+                        }
 
-                        }   
-                        filter()
                     })
 
-                      
+
+
+
                     bmainrate.appendChild(bcheck);
                     sectiondiv.appendChild(bmainrate)
-              
+
                 })
-                
+
                 mainrate.appendChild(sectiondiv)
 
             });
 
+            function ramfilter(filteredPhones) {
 
 
-            // 
-
-            // function ramfilter(){
-            //     console.log("hjhdjh")
-            // }
-
-
-            function filter() {
-                if (select.size === 0) {
-                    display(data.phonesec);
-                    console.log(select)
-                    // console.log("no")
-                } else {
-                    // console.log(select)
-                    // if(arr =='ramcheck')
-                    //     {
-                    //         // console.log("bhbh")
-                    //         ramfilter()
-                    //     }
-
-
-
-                    // const filter= data.phonesec.speciality.filter(item =>{
-                    //     item.id.includes()
-                    // })
-                    display(data.phonesec);
-                    // const filter= data.phonesec.filter(item => {
-                    // return Array.from(select).some(value => item.name.startsWith(value));
-                    // select.has(item.data)
-
-                    // });
-
-                }
+                filteredPhones = filteredPhones.filter(phone =>
+                    phone.speciality.some(spec =>
+                        spec.id === 'ram' && selectedRam.includes(spec.data)
+                    ))
+                console.log("dj")
             }
+
 
 
 
@@ -465,27 +464,56 @@ document.addEventListener('DOMContentLoaded', () => {
             content.innerHTML = data.content;
 
             const links = document.querySelector('.links');
+            const sort = document.createElement('div')
+            sort.innerHTML = data.sort.name
+            sort.className = data.sort.id
+            links.appendChild(sort)
+            const sublink = document.createElement('div');
+            sublink.className = 'sublink'
+
+            links.appendChild(sublink);
+
             data.link.forEach(item => {
                 const list = document.createElement('span');
                 list.innerHTML = item.name;
                 list.id = item.id
+                list.className = item.class
+                sublink.appendChild(list);
 
-                links.appendChild(list);
 
-                list.addEventListener('click', (e) => {
-
-                    list.style.color = list.style.color === 'blue' ? 'black' : 'blue'
-                    list.style.fontFamily = list.style.fontFamily === 'semibold' ? 'regular' : 'semibold'
-                    list.style.borderBottom = list.style.borderBottom === '2px solid blue' ? '2px transparent' : '2px solid blue'
-
-                    if (list.id === 'low') {
-                        lowtohigh();
-                    } else if (list.id === 'high') {
-                        hightolow();
+                list.addEventListener('click', () => {
+                    removeactive()
+                    list.classList.add('active')
+                    if (list.id === 'high') {
+                        hightolow()
                     }
 
-                });
-            })
+                    else if (list.id === 'low') {
+                        lowtohigh()
+                    }
+
+
+                    else {
+                        display(data.phonesec)
+                    }
+                    // console.log(list.className)
+
+                })
+
+
+
+                function removeactive() {
+                    const linkers = sublink.querySelectorAll('span');
+                    linkers.forEach(li => {
+                        li.classList.remove('active')
+
+                    })
+                }
+
+            })  
+
+
+
 
             function lowtohigh() {
 
@@ -545,15 +573,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     const label = document.createElement('label');
                     check.type = 'checkbox';
                     label.innerHTML = item.compare;
-                    check.value = item.compare;
+                    check.value = item.compare;           
 
-                    tick.appendChild(check);
-                    tick.appendChild(label);
+                    tick.appendChild(check);  
+                    tick.appendChild(label); 
 
                     phone.appendChild(tick);
-                    mainph.appendChild(phone);
-
-
+                    mainph.appendChild(phone);   
+                    
 
                     // filter: invert(0.4);
 
@@ -571,7 +598,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                     subhrt.addEventListener('click', () => {
-                        console.log('ddd')
+                        // console.log('ddd')
 
                         const himg = subhrt.querySelector('.hrtimg')
                         himg.style.filter = himg.style.filter === 'invert(0)' ? 'invert(0.5)' : 'invert(0)';
@@ -600,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     leftdata.appendChild(ulel);
 
                     datasec.appendChild(leftdata);
-                    mainph.appendChild(datasec);
+                    mainph.appendChild(datasec);       
 
                     const right = document.createElement('div');
                     right.className = 'right';
@@ -631,67 +658,162 @@ document.addEventListener('DOMContentLoaded', () => {
                     mainsec.appendChild(mainph);
                 });
             }
-        
+
             display(data.phonesec);
- 
 
-            const page=document.querySelector('.next span')
-            page.innerHTML=data.next.page
 
-           
-            const pagecount=document.querySelector('.next .pages')
+  
+            const page = document.querySelector('.pagenumber')
+            page.innerHTML = `page 1 of 389`
 
-            data.next.number.forEach(list=>{
-                const count=document.createElement('div')
-                count.className='count'
+            const pagecount = document.querySelector('.pages')
 
-                count.innerHTML=`<a href="${list.url}">${list.value}</a>`
+            const prev = document.createElement('div')
+            prev.innerHTML = data.next.prev.value
+            prev.className = data.next.prev.class
+            pagecount.appendChild(prev)
+
+            data.next.number.forEach(list => {
+                const count = document.createElement('div')
+                count.id = 'count'
+                count.className = list.class
+                count.innerHTML = `<a>${list.value}</a>`
                 pagecount.appendChild(count)
+
+                count.addEventListener('click', () => {
+                    add(count)
+
+
+                })
+            })
+
+            function add(selected) {
+
+                const page = document.querySelector('.pagenumber')
+                // console.log(selected.textContent)
+                page.innerHTML = `page ${selected.textContent} of 389`
+
+
+                removecount()
+                selected.classList.add('active')
+                console.log(selected.textContent)
+
+                const allvar = pagecount.querySelectorAll('div')
+                allvar.forEach(item => {
+
+
+
+                    if (allvar[1].className == 'active') {
+                        prev.style.display = 'none'
+
+                    }
+
+                    else if (allvar[1].className == '') {
+                        prev.style.display = 'flex'
+                    }
+
+                })
             }
 
-            )
-             
+            function removecount() {
+                const numbers = pagecount.querySelectorAll('div')
+                numbers.forEach(num => {
 
-            
-           const looks=document.querySelector('.sublook')
-           const find=document.createElement('div')
-           find.className='find'
-           find.innerHTML=data.next.looking
-           looks.appendChild(find)
+                    const t = num.classList.remove('active')
 
-
-
-           const yes=document.createElement('button')
-           yes.className='yesbtn'
-           yes.innerHTML=data.next.yes
-
-
-           looks.appendChild(yes)
-    
-           const no=document.createElement('button')
-           no.className='nobtn'
-           no.innerHTML=data.next.no   
-           looks.appendChild(no)
-    
-
-    
-           
-           
+                })
+            }
 
 
 
 
+            const next = document.createElement('div')
+            next.innerHTML = data.next.last.value
+            next.className = data.next.last.class
+            pagecount.appendChild(next)
 
 
 
+            const pages = pagecount.querySelectorAll('div');
 
-            
+            let currentPage = 1;
+
+
+            //update the pages
+
+            function updatePages() {
+
+                pages.forEach((p, index) => {
+                    if (index === currentPage) {
+                        console.log(index)
+                        p.classList.add('active');
+                        const page = document.querySelector('.pagenumber')
+                        // console.log(selected.textContent)
+                        page.innerHTML = "page " + index + " of 389"
+
+                    }
+                    else {
+                        p.classList.remove('active');
+                    }
+
+
+                });
+
+                prev.style.display = currentPage === 1 ? 'none' : 'inline';
+                next.style.display = currentPage === pages.length - 2 ? 'none' : 'inline';
+            }
+
+
+            // add next and prev event listerners 
+
+            next.addEventListener('click', () => {
+                if (currentPage < pages.length - 2) {
+                    currentPage++;
+                    updatePages();
+                }
+            });
+
+            prev.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updatePages();
+                }
+            });
+
+
+            updatePages();
+
+
+
+            const looks = document.querySelector('.sublook')
+            const find = document.createElement('div')
+            find.className = 'find'
+            find.innerHTML = data.next.looking
+            looks.appendChild(find)
+
+
+
+            const yes = document.createElement('button')
+            yes.className = 'yesbtn'
+            yes.innerHTML = data.next.yes
+
+
+            looks.appendChild(yes)
+
+            const no = document.createElement('button')
+            no.className = 'nobtn'
+            no.innerHTML = data.next.no
+            looks.appendChild(no)
+
+
 
 
             const footer1 = document.querySelector('.footer1')
             data.footer.foot1.forEach(item => {
                 const sec = document.createElement('div')
                 sec.className = "footsec"
+                sec.id = item.id
+
 
                 const head = document.createElement('div')
                 head.className = "foothead"
@@ -701,14 +823,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.loop.forEach(foot => {
                     const list = document.createElement('p')
                     list.innerHTML = foot
+
                     sec.appendChild(list)
                     // console.log(list)
                 })
+
+
                 footer1.appendChild(sec)
 
+
             })
-
-
 
 
             const bottom = document.querySelector('.bottom')
@@ -719,315 +843,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 bottom.appendChild(botm)
 
 
-            })
 
-
-
-
-
+            });
 
         });
 
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =======================================================================================================================
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-
-//     fetch('filter.json')
-//         .then(response => response.json())
-//         .then(data => {
-
-
-
-
-//         const check=document.querySelector('.filter')
-//         const products = document.querySelector('.product')
-
-//         const search = document.getElementById('search')
-
-//         const select=new Set()
-
-
-
-//         data.checkbox.forEach(item=>{
-
-//             const box=document.createElement('input')
-//             const label=document.createElement('label')
-//             label.className='label'
-//             box.type='checkbox'
-//             box.value=item.val
-//             box.id=item.id
-//             label.innerHTML=item.val
-
-//             check.appendChild(box)
-//             check.appendChild(label)
-//             console.log(box.value)
-
-
-
-//             box.addEventListener('change',(e)=>{
-
-//                 if (box.checked)
-//                     {
-//                         select.add(box.id)
-
-//                     }
-//                 else
-//                     {
-//                         select.delete(box.id)
-//                         console.log(select)
-//                     }
-
-//                 checkboxfilter()         
-//             })
-
-//         })
-
-
-//         const checkboxfilter=()=>{
-
-//             if(select.size===0){
-//                 console.log('not')
-//                 display(data.content)
-//             }
-//             else{
-//                 console.log('yes')
-//                 console.log(select)
-
-//                   const filter=data.content.filter(item=>
-//                   select.has(item.id.toString())
-
-//                   )
-
-//             display(filter);
-
-//             }
-
-//         }
-
-//             const display = (product) => {
-
-//                products.innerHTML = ''
-//                product.forEach(item => {
-
-//                     const items = document.createElement('div')
-
-//                     items.className = 'productitems'
-
-//                     items.innerHTML = `
-//                 <img src="${item.img}"><br>
-//                 <p>${item.price}</p>
-//                 <br><h4>${item.name}</h4>
-//                 <br><h5>${item.brand}</h5>`
-
-//                     products.appendChild(items)
-//                 })
-//                 // console.log(product)
-//             }
-//             display(data.content)  
-//             search.addEventListener('input',(e)=>{
-//                 const value=e.target.value.toLowerCase();
-
-//                 const filter=data.content.filter(items=>
-//                     items.name.toLowerCase().includes(value) ||
-//                     items.brand.toLowerCase().includes(value)
-//                 )
-//                 display(filter)
-
-//             })
-
-//             const rangeel=document.querySelector('.range')
-
-//             data.range.forEach(item =>{
-
-//                 const input=document.createElement('input')
-//                 input.type='text'
-//                 input.placeholder='Enter price'
-//                 const label=document.createElement('label')
-//                 label.innerText=item.name
-
-//                 rangeel.appendChild(label)
-//                 rangeel.appendChild(input)     
-
-//             })
-
-//        })
-// })
+})

@@ -9,9 +9,9 @@ const backel = document.querySelector("#back")
 
 
 
-const infoel=document.querySelector('.info')
+const infoel = document.querySelector('.info')
 
-const subel=document.querySelector('.sub')
+const subel = document.querySelector('.sub')
 
 
 let index = 0
@@ -28,34 +28,29 @@ function display() {
         textarea.value = textarea.value.slice(0, -1)
     }
 
-    else if (letters[index].textContent === "space" ) {
+    else if (letters[index].textContent === "space") {
 
         textarea.value += '  '
 
     }
-    else if(letters[index].textContent === "Tab")
-        {
-            textarea.value += '     '  
-        }
-        else if(letters[index].textContent === "Enter")
-            {
-                textarea.value += '\n'  
-            }
+    else if (letters[index].textContent === "Tab") {
+        textarea.value += '     '
+    }
+    else if (letters[index].textContent === "Enter") {
+        textarea.value += '\n'
+    }
 
     else if (letters[index].textContent === "CapsLk") {
-        if (f == 0)
-        {
+        if (f == 0) {
             f = 1
         }
-        else
-        {
+        else {
             f = 0
         }
     }
-    else if(letters[index].textContent === "Fn" || letters[index].textContent === "Cntrl" || letters[index].textContent === "alt" || letters[index].textContent === "Shift" || letters[index].textContent === "AltGr")
-        {
-            textarea.value += ''
-        }
+    else if (letters[index].textContent === "Fn" || letters[index].textContent === "Cntrl" || letters[index].textContent === "alt" || letters[index].textContent === "Shift" || letters[index].textContent === "AltGr") {
+        textarea.value += ''
+    }
     else {
 
         if (f == 1) {
@@ -65,8 +60,8 @@ function display() {
             textarea.value += letters[index].textContent.toLowerCase()
         }
     }
-
-}
+    
+}    
 
 function move() {
 
@@ -82,7 +77,7 @@ function move() {
 }
 
 
-
+       
 clickel.addEventListener('mouseover', () => {
     movetime = setInterval(move, 1000)
 
@@ -93,24 +88,14 @@ clickel.addEventListener('click', () => {
 
     display()
 
-},1000)
-
-
+}, 1000)
 
 clickel.addEventListener('mouseleave', () => {
-
-// display()
-clearInterval(movetime)
-
+    clearInterval(movetime)
 
 })
 
+infoel.addEventListener('click', () => {
+    subel.style.display = subel.style.display === 'block' ? 'none' : 'block'
 
-
-
-infoel.addEventListener('click',()=>{
-    subel.style.display=subel.style.display==='block'?'none':'block'
-
-
- })
-               
+})

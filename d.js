@@ -1,5 +1,3 @@
-
-
 // // ................................
 // const progress = document.getElementById('progress')
 // const circles = document.querySelectorAll('.circle')
@@ -69,3 +67,150 @@ function printPyramid(n) {
 }
 
 printPyramid(6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+
+
+
+
+// =======================================================================================================================
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+
+
+//     fetch('filter.json')
+//         .then(response => response.json())
+//         .then(data => {
+
+
+
+
+//         const check=document.querySelector('.filter')
+//         const products = document.querySelector('.product')
+
+//         const search = document.getElementById('search')
+
+//         const select=new Set()
+
+
+
+//         data.checkbox.forEach(item=>{
+
+//             const box=document.createElement('input')
+//             const label=document.createElement('label')
+//             label.className='label'
+//             box.type='checkbox'
+//             box.value=item.val
+//             box.id=item.id
+//             label.innerHTML=item.val
+
+//             check.appendChild(box)
+//             check.appendChild(label)
+//             console.log(box.value)
+
+
+
+//             box.addEventListener('change',(e)=>{
+
+//                 if (box.checked)
+//                     {
+//                         select.add(box.id)
+
+//                     }
+//                 else
+//                     {
+//                         select.delete(box.id)
+//                         console.log(select)
+//                     }
+
+//                 checkboxfilter()         
+//             })
+
+//         })
+
+
+//         const checkboxfilter=()=>{
+
+//             if(select.size===0){
+//                 console.log('not')
+//                 display(data.content)
+//             }
+//             else{
+//                 console.log('yes')
+//                 console.log(select)
+
+//                   const filter=data.content.filter(item=>
+//                   select.has(item.id.toString())
+
+//                   )
+
+//             display(filter);
+
+//             }
+
+//         }
+
+//             const display = (product) => {
+
+//                products.innerHTML = ''
+//                product.forEach(item => {
+
+//                     const items = document.createElement('div')
+
+//                     items.className = 'productitems'
+
+//                     items.innerHTML = `
+//                 <img src="${item.img}"><br>
+//                 <p>${item.price}</p>
+//                 <br><h4>${item.name}</h4>
+//                 <br><h5>${item.brand}</h5>`
+
+//                     products.appendChild(items)
+//                 })
+//                 // console.log(product)
+//             }
+//             display(data.content)  
+//             search.addEventListener('input',(e)=>{
+//                 const value=e.target.value.toLowerCase();
+
+//                 const filter=data.content.filter(items=>
+//                     items.name.toLowerCase().includes(value) ||
+//                     items.brand.toLowerCase().includes(value)
+//                 )
+//                 display(filter)
+
+//             })
+
+//             const rangeel=document.querySelector('.range')
+
+//             data.range.forEach(item =>{
+
+//                 const input=document.createElement('input')
+//                 input.type='text'
+//                 input.placeholder='Enter price'
+//                 const label=document.createElement('label')
+//                 label.innerText=item.name
+
+//                 rangeel.appendChild(label)
+//                 rangeel.appendChild(input)     
+
+//             })
+
+//        })
+// })

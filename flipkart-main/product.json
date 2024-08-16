@@ -5,58 +5,58 @@
             "explore": "Explore",
             "plus": "Plus",
             "plogo": "assets/images/plus.png",
-            "search": "/assets/icons/searchsmall.svg",
+            "search": "assets/icons/searchsmall.svg",
             "login": "Login",
             "seller": "Become a Seller",
             "more": "More ",
-            "down": "/assets/icons/angle-down-solid.svg",
-            "cartimg": "/assets/icons/cart.svg",
+            "down": "assets/icons/angle-down-solid.svg",
+            "cartimg": "assets/icons/cart.svg",
             "cart": "Cart"
         }
     ],
     "drop": [
         {
             "data": "Electronics",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "TVs & Appliances",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Men",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Women",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Baby & Kids",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Home & Furniture",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Sports, Books & More",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Flights",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         },
         {
             "data": "Offer Zone",
-            "icon": "/assets/icons/angle-down-solid.svg"
+            "icon": "assets/icons/angle-down-solid.svg"
         }
     ],
     "left": [
         {
             "filter": "Filters",
             "category": "CATEGORIES",
-            "image": "/assets/icons/leftarrowsmall.svg",
+            "image": "assets/icons/leftarrowsmall.svg",
             "access": "Mobiles & Accessories",
             "mobile": "Mobiles",
             "price": "PRICE",
@@ -149,10 +149,10 @@
             "common": "hide",
             "subid": "batterycheck",
             "checkdatas": [
-                "  1000 - 1999 mAh",
-                " 2000 - 2999 mAh",
-                "3000 - 3999 mAh",
-                "4000 - 4999 mAh",
+                "1000 - 1999 mAh",
+                 " 2000 - 2999 mAh",
+                 "3000 - 3999 mAh",
+                 "4000 - 4999 mAh",
                 "5000 - 5999 mAh",
                 " 5000 mAh Above",
                 " 6000 mAh & Above",
@@ -258,38 +258,42 @@
     "right": [
         {
             "val": "Home",
-            "icon": "/assets/icons/angle-right-solid.svg"
+            "icon": "assets/icons/angle-right-solid.svg"
         },
         {
             "val": "Mobiles & Accessories",
-            "icon": "/assets/icons/angle-right-solid.svg"
+            "icon": "assets/icons/angle-right-solid.svg"
         },
         {
             "val": "Mobiles",
-            "icon": "/assets/icons/angle-right-solid.svg"
+            "icon": "assets/icons/angle-right-solid.svg"
         }
-    ],
+    ],  
     "content": "Showing 1 – 24 of 9,941 results for \"mobiles\"",
+    "sort": {
+        "name": "Sort By",
+        "id": "sort"
+    },
     "link": [
         {
-            "name": "Sort By",
-            "id": "sort"
-        },
-        {
             "name": "Relevance",
-            "id": "relevence"
+            "id": "relevence",
+            "class": "active"
         },
         {
             "name": "Popularity",
-            "id": "popularity"
+            "id": "popularity",
+            "class": "nonactive"
         },
         {
             "name": "Price -- Low to High",
-            "id": "low"
+            "id": "low",
+            "class": "nonactive"
         },
         {
             "name": "Price -- High to Low",
-            "id": "high"
+            "id": "high",
+            "class": "nonactive"
         }
     ],
     "phonesec": [
@@ -306,7 +310,7 @@
                     "data": "128 GB ROM",
                     "id": "rom"
                 },
-                {
+                { 
                     "data": "15.49 cm (6.1 inch) Super Retina XDR Display",
                     "id": "display"
                 },
@@ -657,6 +661,493 @@
             "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
             "compare": "Add to Compare",
             "heart": "assets/icons/heart.svg",
+            "name": "POCO C65(Matte Black,128 GB)",
+            "data": "4.3<img src=\"assets/icons/whitestar.svg\">",
+            "review": "48,886 Ratings & 714 Reviews",
+            "speciality": [
+                {
+                    "data": "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB" ,
+                    "id": "rom"
+                },
+                {
+                    "data": "17.94 cm (6.64 inch)Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 8MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "HeiloG85 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "7,999",
+            "img": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/k/k/c65-mzb0g8rin-poco-original-imagw6gyhhu7hur5.jpeg?q=70",
+            "strike": "₹10,000",
+            "off": "36% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹20,950</span> Off on Exchange"
+        },
+        {
+            "id": "redmi",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/6/t/4/-original-imah3chxfkqxyzm3.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "REDMI 12(Jade Black, 128 GB)",
+            "heart": "assets/icons/heart.svg",
+            "data": "4.2<img src=\"assets/icons/whitestar.svg\">",
+            "review": "55,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "6GB RAM | 128 GB ROM | Expandable 1 TB",
+                    "id": "rom"
+                },
+                { 
+                    "data": "17.42 cm (6.79 inch) Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 8MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "Helio Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "10,499",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹19,600",
+            "off": "41% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Apple iPhone 15 (Blue, 128 GB)",
+            "heart": "assets/icons/heart.svg",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "46,931 Ratings & 2,458 Reviews",
+            "speciality": [
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.48 cm (6.1 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "48MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A16 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "70,249",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹70,600",
+            "off": "11% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹53,000</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/b/0/-original-imaghx9qnhzxegu2.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Apple iPhone 14 Plus (Midnight, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "77,251 Ratings & 4,327 Reviews",
+            "speciality": [
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.02 cm (6.7 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "12MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A15 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "56,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹79,600",
+            "off": "28% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "redmi",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "REDMI 13C (Starfrost White, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "33,979 Ratings & 1,900 Reviews",
+            "speciality": [
+                {
+                    "data": "4 GB RAM | 128 GB ROM |Expnadable Upto 1 TB",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.12 cm (6.74 inch)HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP Rear Camara | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "Helio G85 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "7,699",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹11,999",
+            "off": "35% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹6,500</span> Off on Exchange"
+        },
+        {
+            "id": "vivo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Vivo V30 5G (Classic Black, 128 GB)",
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "5,886 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 128 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 50MP | 50MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "7Gen Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "29,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹38,900",
+            "off": "13% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹8,950</span> Off on Exchange"
+        },
+        {
+            "id": "motorola",
+            "heart": "assets/icons/heart.svg",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+            "compare": "Add to Compare",
+            "name": "Motorola G34 5G (Ice Blue, 128 GB)",
+            "data": "4.2<img src=\"assets/icons/whitestar.svg\">",
+            "review": "1,21,694 Ratings & 7,182 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 128 GB ROM ",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.51 cm (6.5 inch) Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 2MP | 16MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "Snapdragon 5G Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "11,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹14,999",
+            "off": "20% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹8,700</span> Off on Exchange"
+        },
+        {
+            "id": "iphone",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Apple iPhone 14 (Black, 128 GB)",
+            "data": "4.6<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "128 GB ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "48MP + 12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "A16 Bionic Chip, 6 Core Processor Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "65,499",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹79,600",
+            "off": "17% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹50,150</span> Off on Exchange"
+        },
+        {
+            "id": "oppo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/0/h/-original-imahfqws9yjuv4vv.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "OPPO K12x 5G with 45W SUPERVOOC Charger In-The-Box (Midnight Navy, 128 GB)",
+
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "6 GB RAM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.94 cm (6.67 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "32MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5100 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "27,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹16,999",
+            "off": "23% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹7,700</span> Off on Exchange"
+        },
+
+
+        {
+            "id": "vivo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/d/1/-original-imagz6tzjgggzygu.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Vivo T3 5G (Cosmic Blue, 128 GB)",
+            "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
+            "review": "8,886 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 128 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.94 cm (6.67 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 2MP | 16MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Dimensity 7200 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "19,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹22,900",
+            "off": "13% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹8,950</span> Off on Exchange"
+        },
+        {
+            "id": "oppo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/0/h/-original-imahfqws9yjuv4vv.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "OPPO K12x 5G with 45W SUPERVOOC Charger In-The-Box (Midnight Navy, 128 GB)",
+
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "6 GB RAM",
+                    "id": "rom"
+                },  
+                {
+                    "data": "16.94 cm (6.67 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "32MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5100 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "27,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹16,999",
+            "off": "23% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹7,700</span> Off on Exchange"
+        },
+        {
+            "id": "samsung",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/7/n/-original-imagzm8qzhpuwrak.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Samsung Galaxy S23 5G (Cream, 128 GB)",
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "1,48,886 Ratings & 13,414 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 128 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "15.26 cm (6.1inch)Full HD+ Display",
+                    "id": "display"
+                },
+                {
+                    "data": "50MP + 10MP +12MP | 12MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "3900 mAh Lithinum Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Snapdragon 8 Gen 2 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "44,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹89,999",
+            "off": "50% off",
+            "free": "Free delivery",
+            "save": "Save extra with combo offers",
+            "exchange": "Upto <span>₹20,950</span> Off on Exchange"
+        },
+        {
+            "id": "poco",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
             "name": "POCO F5 5G (Electric Blue, 256 GB)",
             "data": "4.4<img src=\"assets/icons/whitestar.svg\">",
             "review": "48,886 Ratings & 714 Reviews",
@@ -693,6 +1184,89 @@
             "free": "Free delivery",
             "save": "Daily Saver",
             "exchange": "Upto <span>₹20,950</span> Off on Exchange"
+        },
+        {
+            "id": "oppo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/e/3/-original-imah37gwn2xbvzhy.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "OPPO K12x 5G with 45W SUPERVOOC Charger In-The-Box (Breeze Blue, 128 GB)",
+
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "45,052 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 256 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "16.94 cm (6.67 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "32MP + 2MP | 8MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5100 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "15,999",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "₹18,999",
+            "off": "15% off",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹7,700</span> Off on Exchange"
+        },
+        {
+            "id": "vivo",
+            "phone": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/5/y/8/-original-imagtt4mhqrzjs9r.jpeg?q=70",
+            "compare": "Add to Compare",
+            "heart": "assets/icons/heart.svg",
+            "name": "Vivo T2 Pro 5G (Dune Gold, 128 GB)",
+            "data": "4.5<img src=\"assets/icons/whitestar.svg\">",
+            "review": "8,886 Ratings & 2,414 Reviews",
+            "speciality": [
+                {
+                    "data": "8 GB RAM | 128 ROM",
+                    "id": "rom"
+                },
+                {
+                    "data": "17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id": "display"
+                },
+                {
+                    "data": "64MP + 2MP | 16MP Front Camara",
+                    "id": "camara"
+                },
+                {
+                    "data": "5000 mAh Battery",
+                    "id": "battery"
+                },
+                {
+                    "data": "Dimensity 7200 Processor",
+                    "id": "processor"
+                },
+                {
+                    "data": "1 Year Warrenty for Phone and 6 Months Warrenty for In-Box Accessories",
+                    "id": "warrenty"
+                }
+            ],
+            "price": "26,998",
+            "asure": "asure",
+            "img": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+            "strike": "26,999",
+            "off": " ",
+            "free": "Free delivery",
+            "save": "Daily Saver",
+            "exchange": "Upto <span>₹8,950</span> Off on Exchange"
         }
     ],
     "next": {
@@ -700,50 +1274,66 @@
         "number": [
             {
                 "value": 1,
-                "url": ""
+                "url": "",
+                "class": "active"
             },
-             {
+            {
                 "value": 2,
-                "url": ""
+                "url": "",
+                "class": "nonactive"
             },
-             {
+            {
                 "value": 3,
-                "url": ""
-            } ,
+                "url": "",
+                "class": "nonactive"
+            },
             {
                 "value": 4,
+                "class": "nonactive",
                 "url": ""
-            } ,
+            },
             {
                 "value": 5,
+                "class": "nonactive",
                 "url": ""
             },
-             {
+            {
                 "value": 6,
+                "class": "nonactive",
                 "url": ""
-            } ,
+            },
             {
                 "value": 7,
+                "class": "nonactive",
                 "url": ""
             },
-             {
+            {
                 "value": 8,
+                "class": "nonactive",
                 "url": ""
-            } ,
+            },
             {
                 "value": 9,
-                "url": ""
-            } ,
-            {
-                "value": 10,
+                "class": "nonactive",
                 "url": ""
             },
-            { "value":"NEXT",
-             "url":""
-        }
-               
-                
+            {
+                "value": 10,
+                "class": "nonactive",
+                "url": ""
+            }
         ],
+
+        "prev": {
+            "value": "PREVIOUS",
+            "class": "prev",
+            "url": ""
+        },
+        "last": {
+            "value": "NEXT",
+            "class": "next",
+            "url": ""
+        },
         "looking": "Did you find you were looking for?",
         "yes": "Yes",
         "no": "No"
@@ -752,6 +1342,7 @@
         "foot1": [
             {
                 "name": "ABOUT",
+                "id":"about",
                 "loop": [
                     "Contact Us",
                     "About Us",
@@ -763,6 +1354,7 @@
             },
             {
                 "name": "GROUP COMPANIES",
+                "id":"group",
                 "loop": [
                     "Myntra",
                     "Cleartrip",
@@ -771,6 +1363,7 @@
             },
             {
                 "name": "HELP",
+                "id":"help",
                 "loop": [
                     "Payments",
                     "Shipping",
@@ -781,6 +1374,7 @@
             },
             {
                 "name": "CONSUMER POLICY",
+                "id":"policy",
                 "loop": [
                     " Cancellation & Returns",
                     "  Terms Of Use",
@@ -793,6 +1387,7 @@
             },
             {
                 "name": "Mail Us:",
+                "id":"mail",
                 "loop": [
                     " Flipkart Internet Private Limited,",
                     "Buildings Alyssa, Begonia &",
@@ -804,6 +1399,7 @@
             },
             {
                 "name": "Registered Office Address:",
+                "id":"address",
                 "loop": [
                     "Flipkart Internet Private Limited,",
                     " Buildings Alyssa, Begonia &",
@@ -818,15 +1414,15 @@
         ],
         "social": "Mail Us:",
         "loop": [
-            "/assets/icons/f.svg",
-            "/assets/icons/x.svg",
-            "/assets/icons/youtube.svg"
+            "assets/icons/f.svg",
+            "assets/icons/x.svg",
+            "assets/icons/youtube.svg"
         ],
         "bottom": [
-            "<img src=\" /assets/icons/bag.svg\"><span>Become a Seller<span>",
-            "<img src=\" /assets/icons/star.svg\"><span>Advertise</span>",
-            "<img src=\" /assets/icons/gift.svg\"><span>Gift Cards</span>",
-            "<img src=\" /assets/icons/question.svg\"><span>Help Center</span>",
+            "<img src=\" assets/icons/bag.svg\"><span>Become a Seller<span>",
+            "<img src=\" assets/icons/star.svg\"><span>Advertise</span>",
+            "<img src=\" assets/icons/gift.svg\"><span>Gift Cards</span>",
+            "<img src=\" assets/icons/question.svg\"><span>Help Center</span>",
             "@ 2007-2024<span>Flipkart.com</span>",
             "<img src=\"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg\">"
         ]

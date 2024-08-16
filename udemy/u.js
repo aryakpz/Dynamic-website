@@ -7,7 +7,7 @@
 //         remove()
 //         panel.classList.add('active')
 //     })
-// })
+// })                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 
 
@@ -16,18 +16,14 @@
 //      panel.classList.remove('active')
 //     })
 // }  
+  
+                                                                                                                                                                                                                                                                                                                                                                                    
+// const btnel=document.querySelector('.btn')
+// const search=document.querySelector('.search')
+// const input=document.querySelector('.input')
 
 
-
-
-
-
-const btnel=document.querySelector('.btn')
-const search=document.querySelector('.search')
-const input=document.querySelector('.input')
-
-
-btnel.addEventListener('click',()=>{
-    search.classList.toggle('active')
-    input.focuc()
-})
+// btnel.addEventListener('click',()=>{
+//     search.classList.toggle('active
+//     input.focuc())
+// })                                                                                                                                                                                                                    document
