@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 //==== brands
+
                 const brand = document.querySelector('.left-brand');
                 const bhead = document.createElement('div');
                 bhead.className = 'bhead';
@@ -437,14 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             function ramfilter(filteredPhones) {
 
-
-                filteredPhones = filteredPhones.filter(phone =>
-                    phone.speciality.some(spec =>
-                        spec.id === 'ram' && selectedRam.includes(spec.data)
-                    ))
-                console.log("dj")
             }
-
 
 
 
@@ -510,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     })
                 }
 
-            })  
+            })
 
 
 
@@ -540,12 +534,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const mainsec = document.querySelector('.mainphones');
 
+      
+            // function display(products) {
 
+            //     mainsec.innerHTML = '';
+            //     products.forEach(item => {
+      
+            function display(products, page = 1, perPage = 10) {
 
-            function display(products) {
 
                 mainsec.innerHTML = '';
-                products.forEach(item => {
+
+                // Pagination Logic
+                const start = (page - 1) * perPage;
+                const end = start + perPage;
+                const paginatedProducts = products.slice(start, end);
+
+                paginatedProducts.forEach(item => {
+
                     const mainph = document.createElement('div');
                     mainph.className = 'phones';
 
@@ -573,14 +579,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     const label = document.createElement('label');
                     check.type = 'checkbox';
                     label.innerHTML = item.compare;
-                    check.value = item.compare;           
+                    check.value = item.compare;
 
-                    tick.appendChild(check);  
-                    tick.appendChild(label); 
+                    tick.appendChild(check);
+                    tick.appendChild(label);
 
                     phone.appendChild(tick);
-                    mainph.appendChild(phone);   
-                    
+                    mainph.appendChild(phone);
+
 
                     // filter: invert(0.4);
 
@@ -627,7 +633,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     leftdata.appendChild(ulel);
 
                     datasec.appendChild(leftdata);
-                    mainph.appendChild(datasec);       
+                    mainph.appendChild(datasec);
 
                     const right = document.createElement('div');
                     right.className = 'right';
@@ -656,134 +662,103 @@ document.addEventListener('DOMContentLoaded', () => {
                     datasec.appendChild(rightdata);
                     mainph.appendChild(datasec);
                     mainsec.appendChild(mainph);
+
+
                 });
+
+                // const totalPages = Math.ceil(products.length / perPage);
+
+
+                const totalPages = 10
+                updatepage(totalPages, page);
             }
 
             display(data.phonesec);
 
 
-  
-            const page = document.querySelector('.pagenumber')
-            page.innerHTML = `page 1 of 389`
-
-            const pagecount = document.querySelector('.pages')
-
-            const prev = document.createElement('div')
-            prev.innerHTML = data.next.prev.value
-            prev.className = data.next.prev.class
-            pagecount.appendChild(prev)
-
-            data.next.number.forEach(list => {
-                const count = document.createElement('div')
-                count.id = 'count'
-                count.className = list.class
-                count.innerHTML = `<a>${list.value}</a>`
-                pagecount.appendChild(count)
-
-                count.addEventListener('click', () => {
-                    add(count)
-
-
-                })
-            })
-
-            function add(selected) {
-
-                const page = document.querySelector('.pagenumber')
-                // console.log(selected.textContent)
-                page.innerHTML = `page ${selected.textContent} of 389`
-
-
-                removecount()
-                selected.classList.add('active')
-                console.log(selected.textContent)
-
-                const allvar = pagecount.querySelectorAll('div')
-                allvar.forEach(item => {
 
 
 
-                    if (allvar[1].className == 'active') {
-                        prev.style.display = 'none'
+
+            // =========== pagination ============\\
+
+            function updatepage(totalPages, currentPage) {
+
+                const pagecount = document.querySelector('.pages');
+
+                pagecount.innerHTML = '';
+
+                const prev = document.createElement('div')
+                prev.innerHTML = data.next.prev.value
+                prev.className = data.next.prev.class
+                pagecount.appendChild(prev)
+
+
+
+                // Display pagination numbers
+
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageButton = document.createElement('div');
+                    pageButton.innerHTML = `<a>${i}</a>`;
+                    pageButton.id = 'count';
+                    if (i === currentPage) {
+                        pageButton.classList.add('active');
+                    }
+                    pageButton.addEventListener('click', () => display(data.phonesec, i));
+                    pagecount.appendChild(pageButton);
+
+
+
+
+                    const page = document.querySelector('.pagenumber')
+                    page.innerHTML = `page ${currentPage} of 389`
+
+
+                }
+
+
+                const next = document.createElement('div')
+                next.innerHTML = data.next.last.value
+                next.className = data.next.last.class
+                pagecount.appendChild(next)
+
+
+
+                if (currentPage > 1) {
+                    prev.style.display = 'flex'
+                }
+
+                if (currentPage >= totalPages) {
+                    next.style.display = 'none'
+                }
+
+
+                // Add event listeners for next and prev buttons
+
+                console.log(currentPage)
+
+                prev.addEventListener('click', () => {
+
+                    if (currentPage > 1) {
+
+                        display(data.phonesec, currentPage - 1)
 
                     }
+                });
 
-                    else if (allvar[1].className == '') {
-                        prev.style.display = 'flex'
-                    }
+                next.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
 
-                })
-            }
-
-            function removecount() {
-                const numbers = pagecount.querySelectorAll('div')
-                numbers.forEach(num => {
-
-                    const t = num.classList.remove('active')
-
-                })
-            }
-
-
-
-
-            const next = document.createElement('div')
-            next.innerHTML = data.next.last.value
-            next.className = data.next.last.class
-            pagecount.appendChild(next)
-
-
-
-            const pages = pagecount.querySelectorAll('div');
-
-            let currentPage = 1;
-
-
-            //update the pages
-
-            function updatePages() {
-
-                pages.forEach((p, index) => {
-                    if (index === currentPage) {
-                        console.log(index)
-                        p.classList.add('active');
-                        const page = document.querySelector('.pagenumber')
-                        // console.log(selected.textContent)
-                        page.innerHTML = "page " + index + " of 389"
+                        display(data.phonesec, currentPage + 1)
 
                     }
-                    else {
-                        p.classList.remove('active');
-                    }
-
 
                 });
 
-                prev.style.display = currentPage === 1 ? 'none' : 'inline';
-                next.style.display = currentPage === pages.length - 2 ? 'none' : 'inline';
             }
 
-
-            // add next and prev event listerners 
-
-            next.addEventListener('click', () => {
-                if (currentPage < pages.length - 2) {
-                    currentPage++;
-                    updatePages();
-                }
-            });
-
-            prev.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    updatePages();
-                }
-            });
-
-
-            updatePages();
-
-
+            // footer section
 
             const looks = document.querySelector('.sublook')
             const find = document.createElement('div')
@@ -831,9 +806,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 footer1.appendChild(sec)
 
-
             })
-
 
             const bottom = document.querySelector('.bottom')
             data.footer.bottom.forEach(item => {
@@ -842,10 +815,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 botm.innerHTML = `${item}`
                 bottom.appendChild(botm)
 
-
-
             });
 
-        });
+       });
 
 })
+
+     
