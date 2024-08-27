@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
     fetch('product.json')
+    // addfil(list)    // addfil(list)
 
+                                // console.log(list)
+
+                                // console.log(list)
         .then(response => response.json())
         .then(data => {
 
@@ -57,13 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
                 // =======================Searchbar event filter ==================================================//
-
-
-
-
 
                 searchinput.addEventListener('input', (e) => {
                     const value = e.target.value.toLowerCase();
@@ -75,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
             // ==============================================  left sec  ===============================================//
 
 
@@ -83,24 +81,27 @@ document.addEventListener('DOMContentLoaded', () => {
             const arr = []
 
             data.left.forEach(item => {
-                const top = document.querySelector('.left-filter');
+                const top = document.querySelector('.filterone');
                 top.innerHTML = item.filter;
 
-                //    catagory
+                const clear= document.querySelector('.clear')
+                clear.innerHTML=item.clear;
+
+                //  ===  catagory
                 const category = document.querySelector('.left-category');
 
                 category.innerHTML = `<p class="pdata">${item.category}</p>
                                      <span class="spandata"><img src="${item.image}">${item.access}</span>
                                      <p class="mobdata">${item.mobile}</p>`;
 
-                // price
+                //   ===  price
                 const price = document.querySelector('.left-price');
 
 
                 price.innerHTML = item.price;
 
                 const bar = document.createElement('div')
-                // rangebar
+                //   ===  rangebar
 
                 bar.className = 'rangebar'
                 price.appendChild(bar)
@@ -160,7 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     values.className = 'minvalues'
                     values.value = minvalues
 
-
                     select2.appendChild(values)
                     max.appendChild(select2)
                 })
@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
                 const maxp = document.getElementById('max-select')
 
                 const minp = document.getElementById('min-select')
@@ -179,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 maxp.addEventListener('change', update)
+
                 minp.addEventListener('change', update)
 
 
@@ -198,13 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 }
 
-
-
-
-
-
-
-                //==== brands
+                //=========== brands =============//
 
                 const brand = document.querySelector('.left-brand');
                 const bhead = document.createElement('div');
@@ -234,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const bmaincheck = document.createElement('div');
                 bmaincheck.className = 'bmaincheck';
-
+    
                 //====   bramd check filter
 
                 function brandfilter(names) {
@@ -252,34 +246,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         bmaincheck.appendChild(bcheck);
 
-
-
                         // ============ Checkbox filter ==============// 
-
 
                         check.addEventListener('change', (e) => {
                             if (check.checked) {
                                 list.push(check.value.toLowerCase())
-                                // console.log(list)
+                                // console.log(check.value)
+                                addlist(check.value)
+
                             } else {
-                                list.pop()
-                                // console.log(list)
+                                list.splice(-1)
+                                removelist(check.value)
                             }
-
+                        
                             checkbox()
-
                         })
-
-
                     });
                     brand.appendChild(bmaincheck)
 
-                    const p = document.createElement('p')
+                    const p = document.createElement('p')   
                     p.className = 'more'
                     p.innerHTML = item.more
                     bmaincheck.appendChild(p)
 
-                }
+
+                }   
+
                 brandfilter(item.brandnames);
 
                 //asure filter
@@ -294,7 +286,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (asurecheck.checked) {
                         search.push(asurecheck.value)
-
                     }
                     else {
                         search.pop()
@@ -312,7 +303,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         display(data.phonesec)
                         // console.log(search)
-                    } else {
+
+                    } 
+                    else {
                         // console.log(search)
                         const filter = data.phonesec.filter(item =>
                             select.includes(item.asure))
@@ -345,16 +338,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const imgel = document.querySelector('.bhead img')
 
+            const filitem=document.querySelector('.filteritem')
+
+
+ 
+
+
+
+
+
+
+            // ================ add and remove the list from the screen===================//
+
+
+        function addlist(el){
+
+            const i=document.createElement('span')
+            i.style.display='flex'
+            i.innerHTML=el
+
+            console.log(el)
+            filitem.appendChild(i)
+
+        }
+
+
+
+        function removelist(el){
+
+
+            const listofitems=document.querySelector('.filteritem span.value ')
+            console.log(listofitems)
+
+
+
+        }
+
+
+
+
+
+
+
+
+            const cl=document.querySelector('.clear')
+
+            cl.addEventListener('click',()=>{
+                location.reload()
+            })
+
             function checkbox() {
+
 
                 if (list.length == 0) {
 
                     display(data.phonesec)
-                } else {
+                }        
+                else 
+                {
+ 
+                    cl.style.display= 'block'
 
                     const filter = data.phonesec.filter(item =>
-                        list.includes(item.id.toLowerCase()))
+                        list.includes(item.id.toLowerCase())
+                        
+                    )
 
+    
                     display(filter);
                 }
 
@@ -736,7 +786,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Add event listeners for next and prev buttons
 
-                console.log(currentPage)
+                // console.log(currentPage)
 
                 prev.addEventListener('click', () => {
 

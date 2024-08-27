@@ -55,6 +55,7 @@
     "left": [
         {
             "filter": "Filters",
+            "clear":"CLEAR ALL",
             "category": "CATEGORIES",
             "image": "assets/icons/leftarrowsmall.svg",
             "access": "Mobiles & Accessories",

@@ -33,13 +33,14 @@
    .nav {
        position: fixed;
        top: 0;
-       min-width: 978px;
+       /* min-width: 978px; */
        background-color: #2874f0;
        width: 100%;
        color: white;
        display: flex;
        height: 56px;
        z-index: 1030;
+       overflow: hidden;
    }
 
    .subnav {
@@ -242,7 +243,7 @@
        margin: 0 auto;
        min-width: 978px;
        max-width: 1680px;
-       width: 100%;
+
        position: relative;
        background-color: rgb(239, 241, 241);
    }
@@ -377,13 +378,52 @@
    }
 
    .subleft .left-filter {
+       display: flex;
+
+       flex-flow: column;
+       border-bottom: 1px solid #f0f0f0;
+   }
+
+   .left-sub-filter {
+       display: flex;
+       flex-flow: row;
+       justify-content: space-between;
+   }
+
+   .subleft .filterone {
        padding: 16px;
        padding-top: 18px;
        padding-bottom: 14px;
-       border-bottom: 1px solid #f0f0f0;
+
        font-size: 17px;
        font-family: "semibold";
        letter-spacing: .3px;
+   }
+
+   .filteritem {
+       display: flex;
+   }
+
+   .filteritem span {
+       background-color: rgb(202, 201, 201);
+       font-size: 12px;
+       padding: 5px;
+       display: flex;
+       margin: 5px 5px 10px;
+       width: fit-content;
+       cursor: pointer;
+       display: none;
+       border-radius: 2px;
+   }
+
+   .clear {
+       color: #2874f0;
+       font-size: 13px;
+       font-family: "semibold";
+       padding: 15px;
+       display: none;
+       cursor: pointer;
+
    }
 
    .subleft .left-category {
@@ -932,9 +972,6 @@
        align-items: center;
    }
 
-   .subnext span {
-       /* m */
-   }
 
    .pages {
        display: flex;
@@ -986,12 +1023,13 @@
        cursor: pointer;
    }
 
-   .pages .prev{
-    display: none;
+   .pages .prev {
+       display: none;
    }
+
    .pages .next:hover,
    .pages .prev:hover {
-    color: #083d94;
+       color: #083d94;
    }
 
    .looking {
@@ -1049,6 +1087,7 @@
        width: 100%;
        /* width: 90% !important; */
        flex-flow: row wrap;
+
    }
 
    .footer1 .footsec {
@@ -1079,7 +1118,7 @@
    .mainbottom {
        border-top: 1px solid rgb(126, 125, 125);
    }
-         
+
    .bottom {
 
        display: flex;
@@ -1100,3 +1139,26 @@
 
 
    /* ============================================================================================  */
+
+
+   @media screen and (max-width:1170px) {
+
+       .footer .footer1 {
+           display: flex;
+           flex-flow: column;
+           /* display: n; */
+       }
+
+       #mail {
+           border-left: none;
+           padding-left: 0;
+
+       }
+
+       .bottom {
+           display: flex;
+           flex-flow: column;
+           gap: 10px;
+           padding-left: 40px;
+       }
+   }
