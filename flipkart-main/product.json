@@ -4139,5 +4139,15 @@
             "@ 2007-2024<span>Flipkart.com</span>",
             "<img src=\"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg\">"
         ]
+    },
+    "notfound":{
+        "img":"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/error-no-search-results_2353c5.png",
+        "sorry":"Sorry, no results found!",
+        "please":"Please check the spelling or try searching for something else"
     }
+
+
+
+
+    
 }

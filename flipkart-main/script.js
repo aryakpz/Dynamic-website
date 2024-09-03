@@ -1,13 +1,11 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 
     fetch('product.json')
-    // addfil(list)    // addfil(list)
-
-                                // console.log(list)
-
-                                // console.log(list)
+      
         .then(response => response.json())
-        .then(data => {
+        .then(data=> {
+
 
             const navbar = document.querySelector(".subnav");
 
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bottom.innerHTML = `${item.explore} <span id="plus">${item.plus}</span><img src="${item.plogo}" alt="no">`;
                 top.appendChild(bottom);
                 logo.appendChild(top);
-
+        
                 const button = document.querySelector(".navbutton");
                 button.innerHTML = item.login;
 
@@ -45,8 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = document.createElement('img');
                 img.src = item.search;
                 search.appendChild(img);
-
-
 
 
                 const dropdown = document.querySelector('.dropmenu .subnav');
@@ -84,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const top = document.querySelector('.filterone');
                 top.innerHTML = item.filter;
 
-                const clear= document.querySelector('.clear')
-                clear.innerHTML=item.clear;
+                const clear = document.querySelector('.clear')
+                clear.innerHTML = item.clear;
 
                 //  ===  catagory
                 const category = document.querySelector('.left-category');
@@ -95,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                      <p class="mobdata">${item.mobile}</p>`;
 
                 //   ===  price
-                const price = document.querySelector('.left-price');
+                const price = document.querySelector('.left-price');    
 
 
                 price.innerHTML = item.price;
@@ -169,10 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 price.appendChild(minmax)
 
+    
 
+                // ===== filter by price range
 
                 const maxp = document.getElementById('max-select')
-
                 const minp = document.getElementById('min-select')
 
 
@@ -228,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const bmaincheck = document.createElement('div');
                 bmaincheck.className = 'bmaincheck';
-    
+
                 //====   bramd check filter
 
                 function brandfilter(names) {
@@ -258,19 +255,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 list.splice(-1)
                                 removelist(check.value)
                             }
-                        
+
                             checkbox()
                         })
                     });
                     brand.appendChild(bmaincheck)
 
-                    const p = document.createElement('p')   
+                    const p = document.createElement('p')
                     p.className = 'more'
                     p.innerHTML = item.more
                     bmaincheck.appendChild(p)
 
-
-                }   
+                }
 
                 brandfilter(item.brandnames);
 
@@ -284,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const search = []
                 asurecheck.addEventListener('change', (e) => {
 
-                    if (asurecheck.checked) {
+                    if (asurecheck.checked) {    
                         search.push(asurecheck.value)
                     }
                     else {
@@ -295,8 +291,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
 
 
-
-
                 function asurefunction() {
 
                     if (select.length == 0) {
@@ -304,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         display(data.phonesec)
                         // console.log(search)
 
-                    } 
+                    }
                     else {
                         // console.log(search)
                         const filter = data.phonesec.filter(item =>
@@ -314,10 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         display(filter);
                     }
 
-
                 }
-
-
 
                 //======================== left search ===================================//
 
@@ -338,52 +329,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const imgel = document.querySelector('.bhead img')
 
-            const filitem=document.querySelector('.filteritem')
-
-
- 
-
-
+            const filitem = document.querySelector('.filteritem')
 
 
 
 
             // ================ add and remove the list from the screen===================//
 
+            
+            function addlist(el) {
+           
+                const filterElement = document.createElement('span');
+                filterElement.style.display='flex'
+                filterElement.className = 'filter-item';
+                filterElement.textContent = el;
+                filterElement.setAttribute('data-filter',el);  
+                filitem.appendChild(filterElement);
+            }
 
-        function addlist(el){
-
-            const i=document.createElement('span')
-            i.style.display='flex'
-            i.innerHTML=el
-
-            console.log(el)
-            filitem.appendChild(i)
-
-        }
-
-
-
-        function removelist(el){
-
-
-            const listofitems=document.querySelector('.filteritem span.value ')
-            console.log(listofitems)
-
-
-
-        }
-
-
+            function removelist(el) {
+                const filterItems = document.querySelectorAll('.filter-item');
+                console.log('Filter Items:', filterItems); 
+            
+                filterItems.forEach(item => {
+                    console.log('Item Data Filter:', item.getAttribute('data-filter')); 
+                    if (item.getAttribute('data-filter') === el) {
+                        item.remove(); 
+                    }
+                });
+            }
+            
 
 
+            const cl = document.querySelector('.clear')
 
-
-
-
-            const cl=document.querySelector('.clear')
-
-            cl.addEventListener('click',()=>{
+            cl.addEventListener('click', () => {
                 location.reload()
             })
 
@@ -393,18 +373,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (list.length == 0) {
 
                     display(data.phonesec)
-                }        
-                else 
-                {
- 
-                    cl.style.display= 'block'
+                }
+                else {
+   
+                    cl.style.display = 'block'
 
                     const filter = data.phonesec.filter(item =>
                         list.includes(item.id.toLowerCase())
-                        
+
                     )
 
-    
+
                     display(filter);
                 }
 
@@ -449,9 +428,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         // console.log(bmainrate.style.display);
                     }
                 });
-
-
-
+                        
+    
                 bmainrate.id = item.subid
                 item.checkdatas.forEach(name => {
                     const bcheck = document.createElement('div');
@@ -545,7 +523,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
 
 
-
                 function removeactive() {
                     const linkers = sublink.querySelectorAll('span');
                     linkers.forEach(li => {
@@ -555,7 +532,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
             })
-
 
 
 
@@ -584,12 +560,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const mainsec = document.querySelector('.mainphones');
 
-      
+
             // function display(products) {
 
             //     mainsec.innerHTML = '';
             //     products.forEach(item => {
-      
+
             function display(products, page = 1, perPage = 10) {
 
 
@@ -711,23 +687,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     datasec.appendChild(rightdata);
                     mainph.appendChild(datasec);
-                    mainsec.appendChild(mainph);
+                    mainsec.appendChild(mainph);  
 
 
-                });
+                });  
 
-                // const totalPages = Math.ceil(products.length / perPage);
-
-
-                const totalPages = 10
+                const totalPages = Math.ceil(products.length / perPage);
+                // const totalPages = 10
                 updatepage(totalPages, page);
             }
+   
 
             display(data.phonesec);
-
-
-
-
 
 
             // =========== pagination ============\\
@@ -744,7 +715,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 pagecount.appendChild(prev)
 
 
-
                 // Display pagination numbers
 
 
@@ -758,15 +728,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     pageButton.addEventListener('click', () => display(data.phonesec, i));
                     pagecount.appendChild(pageButton);
 
-
-
-
                     const page = document.querySelector('.pagenumber')
                     page.innerHTML = `page ${currentPage} of 389`
 
-
                 }
-
 
                 const next = document.createElement('div')
                 next.innerHTML = data.next.last.value
@@ -782,7 +747,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentPage >= totalPages) {
                     next.style.display = 'none'
                 }
-
 
                 // Add event listeners for next and prev buttons
 
@@ -821,16 +785,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const yes = document.createElement('button')
             yes.className = 'yesbtn'
             yes.innerHTML = data.next.yes
-
+ 
 
             looks.appendChild(yes)
 
-            const no = document.createElement('button')
+            const no = document.createElement('button')  
             no.className = 'nobtn'
             no.innerHTML = data.next.no
             looks.appendChild(no)
-
-
 
 
             const footer1 = document.querySelector('.footer1')
@@ -855,7 +817,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 footer1.appendChild(sec)
-
+            
             })
 
             const bottom = document.querySelector('.bottom')
@@ -865,10 +827,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 botm.innerHTML = `${item}`
                 bottom.appendChild(botm)
 
-            });
+            });  
 
-       });
-
-})
-
-     
+        });  
+           
+    })    
+        

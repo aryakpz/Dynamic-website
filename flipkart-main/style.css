@@ -406,7 +406,7 @@
 
    .filteritem span {
        background-color: rgb(202, 201, 201);
-       font-size: 12px;
+       font-size: 11px;
        padding: 5px;
        display: flex;
        margin: 5px 5px 10px;
@@ -415,7 +415,7 @@
        display: none;
        border-radius: 2px;
    }
-
+    
    .clear {
        color: #2874f0;
        font-size: 13px;
